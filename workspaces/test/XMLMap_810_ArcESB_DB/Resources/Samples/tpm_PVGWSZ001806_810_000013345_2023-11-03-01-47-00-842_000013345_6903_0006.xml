@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Items xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <t_edi_extra>
+    <id></id>
+    <isa></isa>
+    <ST02></ST02>
+    <amount type="double">534924400</amount>
+    <house_no>PVGWSZ001806</house_no>
+    <invoice_number>PA81681853</invoice_number>
+    <pod></pod>
+    <receive_date type="datetime">2023-11-03</receive_date>
+    <purchase_order_number>PVGWSZ001806</purchase_order_number>
+  </t_edi_extra>
+</Items>

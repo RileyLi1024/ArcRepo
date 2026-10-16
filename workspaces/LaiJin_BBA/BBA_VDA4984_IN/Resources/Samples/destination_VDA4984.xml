@@ -1,0 +1,123 @@
+<Items>
+    <std_edi_delfor_header table="`std_edi_delfor_header`" action="upsert">
+        <id type="long" key="true" ref="@@LAST_INSERT_ID" />
+        <audit_by />
+        <audit_date type="datetime" />
+        <audit_status />
+        <buyer_city />
+        <buyer_code />
+        <buyer_country />
+        <buyer_name />
+        <buyer_name_add />
+        <buyer_postal />
+        <buyer_state />
+        <buyer_street />
+        <buyer_street_add />
+        <calloff_number />
+        <create_datetime type="datetime" />
+        <doc_date type="datetime" />
+        <doc_name />
+        <request_delivery_date type="datetime" />
+        <seller_city />
+        <seller_code />
+        <seller_country />
+        <seller_name />
+        <seller_name_add />
+        <seller_postal />
+        <seller_state />
+        <seller_street />
+        <seller_street_add />
+        <shipfrom_city />
+        <shipfrom_code />
+        <shipfrom_country />
+        <shipfrom_name />
+        <shipfrom_name_add />
+        <shipfrom_postal />
+        <shipfrom_state />
+        <shipfrom_street />
+        <shipfrom_street_add />
+        <status type="int" />
+        <std_edi_delfor_line table="`std_edi_delfor_line`" action="upsert">
+            <id type="long" key="true" ref="@@LAST_INSERT_ID" />
+            <audit_by />
+            <audit_date type="datetime" />
+            <audit_status />
+            <backorder_qty />
+            <backorder_qty_unit />
+            <buyer_item_number />
+            <consumption_point />
+            <consumption_point_name />
+            <contact_person_code />
+            <contact_person_email />
+            <contact_person_fax />
+            <contact_person_name />
+            <contact_person_tel />
+            <cumulative_ordered_enddate type="datetime" />
+            <cumulative_ordered_qty />
+            <cumulative_ordered_qty_unit />
+            <cumulative_ordered_startdate type="datetime" />
+            <cumulative_received_qty />
+            <cumulative_received_qty_unit />
+            <cumulative_received_startdate type="datetime" />
+            <delivery_note_number1 />
+            <despatch_date1 type="datetime" />
+            <discharge_place />
+            <discharge_place_name />
+            <engineering_change_level />
+            <general_information_a />
+            <general_information_b />
+            <general_information_c />
+            <general_information_d />
+            <general_information_e />
+            <header_id type="long" />
+            <item_description />
+            <item_description_add />
+            <item_status />
+            <line_no />
+            <neal_number />
+            <order_item_number />
+            <order_number />
+            <plant_code />
+            <previous_release_creation_date type="datetime" />
+            <previous_release_number />
+            <receipt_qty_date1 type="datetime" />
+            <received_qty1 />
+            <received_qty_unit1 />
+            <release_creation_date type="datetime" />
+            <release_number />
+            <shipto_city />
+            <shipto_code />
+            <shipto_country />
+            <shipto_name />
+            <shipto_name_add />
+            <shipto_postal />
+            <shipto_state />
+            <shipto_street />
+            <shipto_street_add />
+            <suppier_item_number />
+            <transport_mode />
+            <warehouse_name />
+            <warehouse_number />
+            <std_dei_delfor_lineschedule table="`std_dei_delfor_lineschedule`" action="upsert">
+                <id type="long" key="true" ref="@@LAST_INSERT_ID" />
+                <audit_by />
+                <audit_date type="datetime" />
+                <audit_status />
+                <daily_delivery_date type="datetime" />
+                <delivered_qty />
+                <delivered_qty_unit />
+                <earliest_delivery_date type="datetime" />
+                <lastest_delivery_date type="datetime" />
+                <line_id type="long" />
+                <plan_type />
+                <request_production_qty />
+                <request_production_qty_unit />
+                <request_production_startdate type="datetime" />
+                <request_productione_enddate type="datetime" />
+                <request_shipment_date type="datetime" />
+                <urgent_delivered_qty />
+                <urgent_delivered_qty_unit />
+            </std_dei_delfor_lineschedule>
+        </std_edi_delfor_line>
+    </std_edi_delfor_header>
+</Items>

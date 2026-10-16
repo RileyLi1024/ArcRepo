@@ -1,0 +1,2155 @@
+<Interchange Delimiters=":+.?*'" xmlns="http://www.rssbus.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Meta>
+		<!--SYNTAX IDENTIFIER-->
+		<UNB1 type="Composite">
+			<!--Syntax identifier-->
+			<UNB1.1>
+				<!--UN/ECE level B-->UNOB</UNB1.1>
+			<!--Syntax version number-->
+			<UNB1.2>
+				<!--Version 3-->3</UNB1.2>
+		</UNB1>
+		<!--INTERCHANGE SENDER-->
+		<UNB2 type="Composite">
+			<!--Interchange sender identification-->
+			<UNB2.1/>
+		</UNB2>
+		<!--INTERCHANGE RECIPIENT-->
+		<UNB3 type="Composite">
+			<!--Interchange recipient identification-->
+			<UNB3.1/>
+		</UNB3>
+		<!--DATE AND TIME OF PREPARATION-->
+		<UNB4 type="Composite">
+			<!--Date-->
+			<UNB4.1>230412</UNB4.1>
+			<!--Time-->
+			<UNB4.2>1622</UNB4.2>
+		</UNB4>
+		<!--Interchange control reference-->
+		<UNB5>000000108</UNB5>
+		<!--RECIPIENT&apos;S REFERENCE/PASSWORD DETAILS-->
+		<UNB6 type="Composite"/>
+		<!--Application reference-->
+		<UNB7 xsi:nil="true"/>
+		<!--Processing priority code-->
+		<UNB8/>
+		<!--Acknowledgement request-->
+		<UNB9/>
+		<!--Interchange agreement identifier-->
+		<UNB10/>
+		<!--Test indicator-->
+		<UNB11>
+			<!--Interchange is a test-->1</UNB11>
+	</Meta>
+	<TransactionSet>
+		<TX-D07A-DESADV type="TransactionSet">
+			<Meta>
+				<!--MESSAGE REFERENCE NUMBER-->
+				<_0062>970211168</_0062>
+				<!--MESSAGE IDENTIFIER-->
+				<S009 type="Composite">
+					<!--Message type-->
+					<_0065>
+						<!--Despatch advice message-->DESADV</_0065>
+					<!--Message version number-->
+					<_0052>
+						<!--Draft version/UN/EDIFACT Directory-->D</_0052>
+					<!--Message release number-->
+					<_0054>
+						<!--Release 2007 - A-->07A</_0054>
+					<!--Controlling agency, coded-->
+					<_0051>
+						<!--UN/CEFACT-->UN</_0051>
+					<!--Association assigned code-->
+					<_0057>GAVF11</_0057>
+				</S009>
+			</Meta>
+			<!--BEGINNING OF MESSAGE-->
+			<BGM type="Segment">
+				<!--DOCUMENT/MESSAGE NAME-->
+				<C002 type="Composite">
+					<!--Document name code-->
+					<_1001>
+						<!--Despatch advice-->351</_1001>
+					<!--Code list identification code-->
+					<_1131/>
+					<!--Code list responsible agency code-->
+					<_3055>
+						<!--Joint Automotive Industry agency-->272</_3055>
+					<!--Document name-->
+					<_1000>ANY</_1000>
+				</C002>
+				<!--DOCUMENT/MESSAGE IDENTIFICATION-->
+				<C106 type="Composite">
+					<!--Document identifier-->
+					<_1004>700067176</_1004>
+				</C106>
+				<!--MESSAGE FUNCTION CODE-->
+				<_1225>
+					<!--Original-->9</_1225>
+			</BGM>
+			<!--DATE/TIME/PERIOD-->
+			<DTM type="Segment">
+				<!--DATE/TIME/PERIOD-->
+				<C507 type="Composite">
+					<!--Date or time or period function code qualifier-->
+					<_2005>
+						<!--Document issue date time-->137</_2005>
+					<!--Date or time or period text-->
+					<_2380>201911081705</_2380>
+					<!--Date or time or period format code-->
+					<_2379>
+						<!--CCYYMMDDHHMM-->203</_2379>
+				</C507>
+			</DTM>
+			<!--DATE/TIME/PERIOD-->
+			<DTM type="Segment">
+				<!--DATE/TIME/PERIOD-->
+				<C507 type="Composite">
+					<!--Date or time or period function code qualifier-->
+					<_2005>
+						<!--Despatch date and or time-->11</_2005>
+					<!--Date or time or period text-->
+					<_2380>201911081703</_2380>
+					<!--Date or time or period format code-->
+					<_2379>
+						<!--CCYYMMDDHHMM-->203</_2379>
+				</C507>
+			</DTM>
+			<!--DATE/TIME/PERIOD-->
+			<DTM type="Segment">
+				<!--DATE/TIME/PERIOD-->
+				<C507 type="Composite">
+					<!--Date or time or period function code qualifier-->
+					<_2005>
+						<!--Transport means arrival date time, estimated-->132</_2005>
+					<!--Date or time or period text-->
+					<_2380>201911130000</_2380>
+					<!--Date or time or period format code-->
+					<_2379>
+						<!--CCYYMMDD-->102</_2379>
+				</C507>
+			</DTM>
+			<!--DATE/TIME/PERIOD-->
+			<DTM type="Segment">
+				<!--DATE/TIME/PERIOD-->
+				<C507 type="Composite">
+					<!--Date or time or period function code qualifier-->
+					<_2005>
+						<!--Delivery date/time, requested-->2</_2005>
+					<!--Date or time or period text-->
+					<_2380>201911130000</_2380>
+					<!--Date or time or period format code-->
+					<_2379>
+						<!--CCYYMMDD-->102</_2379>
+				</C507>
+			</DTM>
+			<!--MEASUREMENTS-->
+			<MEA type="Segment">
+				<!--MEASUREMENT PURPOSE CODE QUALIFIER-->
+				<_6311>
+					<!--Consignment measurement-->AAX</_6311>
+				<!--MEASUREMENT DETAILS-->
+				<C502 type="Composite">
+					<!--Measured attribute code-->
+					<_6313>
+						<!--Consignment gross weight-->AAD</_6313>
+				</C502>
+				<!--VALUE/RANGE-->
+				<C174 type="Composite">
+					<!--Measurement unit code-->
+					<_6411>KGM</_6411>
+					<!--Measure-->
+					<_6314>863</_6314>
+				</C174>
+			</MEA>
+			<!--MEASUREMENTS-->
+			<MEA type="Segment">
+				<!--MEASUREMENT PURPOSE CODE QUALIFIER-->
+				<_6311>
+					<!--Consignment measurement-->AAX</_6311>
+				<!--MEASUREMENT DETAILS-->
+				<C502 type="Composite">
+					<!--Measured attribute code-->
+					<_6313>
+						<!--Net weight-->AAL</_6313>
+				</C502>
+				<!--VALUE/RANGE-->
+				<C174 type="Composite">
+					<!--Measurement unit code-->
+					<_6411>KGM</_6411>
+					<!--Measure-->
+					<_6314>432</_6314>
+				</C174>
+			</MEA>
+			<!--MEASUREMENTS-->
+			<MEA type="Segment">
+				<!--MEASUREMENT PURPOSE CODE QUALIFIER-->
+				<_6311>
+					<!--Consignment measurement-->AAX</_6311>
+				<!--MEASUREMENT DETAILS-->
+				<C502 type="Composite">
+					<!--Measured attribute code-->
+					<_6313>
+						<!--Tare weight-->T</_6313>
+				</C502>
+				<!--VALUE/RANGE-->
+				<C174 type="Composite">
+					<!--Measurement unit code-->
+					<_6411>KGM</_6411>
+					<!--Measure-->
+					<_6314>432</_6314>
+				</C174>
+			</MEA>
+			<!--MEASUREMENTS-->
+			<MEA type="Segment">
+				<!--MEASUREMENT PURPOSE CODE QUALIFIER-->
+				<_6311>
+					<!--Consignment measurement-->AAX</_6311>
+				<!--MEASUREMENT DETAILS-->
+				<C502 type="Composite">
+					<!--Measured attribute code-->
+					<_6313>
+						<!--Volume-->ABJ</_6313>
+				</C502>
+				<!--VALUE/RANGE-->
+				<C174 type="Composite">
+					<!--Measurement unit code-->
+					<_6411>DMQ</_6411>
+					<!--Measure-->
+					<_6314>3852</_6314>
+				</C174>
+			</MEA>
+			<!--MEASUREMENTS-->
+			<MEA type="Segment">
+				<!--MEASUREMENT PURPOSE CODE QUALIFIER-->
+				<_6311>
+					<!--Measurement-->AAE</_6311>
+				<!--MEASUREMENT DETAILS-->
+				<C502 type="Composite"/>
+				<!--VALUE/RANGE-->
+				<C174 type="Composite">
+					<!--Measurement unit code-->
+					<_6411>C62</_6411>
+					<!--Measure-->
+					<_6314>1</_6314>
+				</C174>
+			</MEA>
+			<RFFLoop1 type="Loop">
+				<!--REFERENCE-->
+				<RFF type="Segment">
+					<!--REFERENCE-->
+					<C506 type="Composite">
+						<!--Reference code qualifier-->
+						<_1153>
+							<!--Transport contract document identifier-->AAS</_1153>
+						<!--Reference identifier-->
+						<_1154>BV50DUI</_1154>
+					</C506>
+				</RFF>
+			</RFFLoop1>
+			<RFFLoop1 type="Loop">
+				<!--REFERENCE-->
+				<RFF type="Segment">
+					<!--REFERENCE-->
+					<C506 type="Composite">
+						<!--Reference code qualifier-->
+						<_1153>
+							<!--Transport means journey identifier-->CRN</_1153>
+						<!--Reference identifier-->
+						<_1154>143967</_1154>
+					</C506>
+				</RFF>
+			</RFFLoop1>
+			<RFFLoop1 type="Loop">
+				<!--REFERENCE-->
+				<RFF type="Segment">
+					<!--REFERENCE-->
+					<C506 type="Composite">
+						<!--Reference code qualifier-->
+						<_1153>AVU</_1153>
+						<!--Reference identifier-->
+						<_1154>BV50DUI</_1154>
+					</C506>
+				</RFF>
+			</RFFLoop1>
+			<RFFLoop1 type="Loop">
+				<!--REFERENCE-->
+				<RFF type="Segment">
+					<!--REFERENCE-->
+					<C506 type="Composite">
+						<!--Reference code qualifier-->
+						<_1153>
+							<!--Waybill number-->AAM</_1153>
+						<!--Reference identifier-->
+						<_1154>143967</_1154>
+					</C506>
+				</RFF>
+			</RFFLoop1>
+			<NADLoop1 type="Loop">
+				<!--NAME AND ADDRESS-->
+				<NAD type="Segment">
+					<!--PARTY FUNCTION CODE QUALIFIER-->
+					<_3035>
+						<!--Ship to-->ST</_3035>
+					<!--PARTY IDENTIFICATION DETAILS-->
+					<C082 type="Composite">
+						<!--Party identifier-->
+						<_3039>070</_3039>
+						<!--Code list identification code-->
+						<_1131/>
+						<!--Code list responsible agency code-->
+						<_3055>
+							<!--Assigned by buyer or buyer&apos;s agent-->92</_3055>
+					</C082>
+					<!--NAME AND ADDRESS-->
+					<C058 type="Composite"/>
+					<!--PARTY NAME-->
+					<C080 type="Composite">
+						<!--Party name-->
+						<_3036>BMW AG Werk Leipzig</_3036>
+					</C080>
+					<!--STREET-->
+					<C059 type="Composite">
+						<!--Street and number or post office box identifier-->
+						<_3042>Tor 1 Abladestelle</_3042>
+					</C059>
+					<!--CITY NAME-->
+					<_3164>LEIPZIG</_3164>
+					<!--COUNTRY SUBDIVISION DETAILS-->
+					<C819 type="Composite"/>
+					<!--POSTAL IDENTIFICATION CODE-->
+					<_3251>04349</_3251>
+					<!--COUNTRY IDENTIFIER-->
+					<_3207>DE</_3207>
+				</NAD>
+				<!--PLACE/LOCATION IDENTIFICATION-->
+				<LOC type="Segment">
+					<!--LOCATION FUNCTION CODE QUALIFIER-->
+					<_3227>
+						<!--Place of discharge-->11</_3227>
+					<!--LOCATION IDENTIFICATION-->
+					<C517 type="Composite">
+						<!--Location identifier-->
+						<_3225>51C28</_3225>
+					</C517>
+				</LOC>
+				<!--PLACE/LOCATION IDENTIFICATION-->
+				<LOC type="Segment">
+					<!--LOCATION FUNCTION CODE QUALIFIER-->
+					<_3227>
+						<!--Place of delivery-->7</_3227>
+					<!--LOCATION IDENTIFICATION-->
+					<C517 type="Composite">
+						<!--Location identifier-->
+						<_3225>503 17</_3225>
+					</C517>
+				</LOC>
+			</NADLoop1>
+			<NADLoop1 type="Loop">
+				<!--NAME AND ADDRESS-->
+				<NAD type="Segment">
+					<!--PARTY FUNCTION CODE QUALIFIER-->
+					<_3035>
+						<!--Buyer-->BY</_3035>
+					<!--PARTY IDENTIFICATION DETAILS-->
+					<C082 type="Composite">
+						<!--Party identifier-->
+						<_3039>BMW-AG</_3039>
+						<!--Code list identification code-->
+						<_1131/>
+						<!--Code list responsible agency code-->
+						<_3055>
+							<!--Assigned by buyer or buyer&apos;s agent-->92</_3055>
+					</C082>
+					<!--NAME AND ADDRESS-->
+					<C058 type="Composite"/>
+					<!--PARTY NAME-->
+					<C080 type="Composite">
+						<!--Party name-->
+						<_3036>BMW AG CENTRAL INVOICE CONTROL</_3036>
+					</C080>
+					<!--STREET-->
+					<C059 type="Composite">
+						<!--Street and number or post office box identifier-->
+						<_3042>Kreditorische Abrechnung</_3042>
+					</C059>
+					<!--CITY NAME-->
+					<_3164>D-80788 MUENCHEN</_3164>
+					<!--COUNTRY SUBDIVISION DETAILS-->
+					<C819 type="Composite"/>
+					<!--POSTAL IDENTIFICATION CODE-->
+					<_3251>80788</_3251>
+					<!--COUNTRY IDENTIFIER-->
+					<_3207>DE</_3207>
+				</NAD>
+			</NADLoop1>
+			<NADLoop1 type="Loop">
+				<!--NAME AND ADDRESS-->
+				<NAD type="Segment">
+					<!--PARTY FUNCTION CODE QUALIFIER-->
+					<_3035>
+						<!--Seller-->SE</_3035>
+					<!--PARTY IDENTIFICATION DETAILS-->
+					<C082 type="Composite">
+						<!--Party identifier-->
+						<_3039>16925810</_3039>
+						<!--Code list identification code-->
+						<_1131/>
+						<!--Code list responsible agency code-->
+						<_3055>
+							<!--Assigned by buyer or buyer&apos;s agent-->92</_3055>
+					</C082>
+					<!--NAME AND ADDRESS-->
+					<C058 type="Composite"/>
+					<!--PARTY NAME-->
+					<C080 type="Composite">
+						<!--Party name-->
+						<_3036>Mustermann AG</_3036>
+					</C080>
+					<!--STREET-->
+					<C059 type="Composite">
+						<!--Street and number or post office box identifier-->
+						<_3042>Example-Street 1</_3042>
+					</C059>
+					<!--CITY NAME-->
+					<_3164>HUMES-JORQUENAY</_3164>
+					<!--COUNTRY SUBDIVISION DETAILS-->
+					<C819 type="Composite"/>
+					<!--POSTAL IDENTIFICATION CODE-->
+					<_3251>52200</_3251>
+					<!--COUNTRY IDENTIFIER-->
+					<_3207>FR</_3207>
+				</NAD>
+			</NADLoop1>
+			<NADLoop1 type="Loop">
+				<!--NAME AND ADDRESS-->
+				<NAD type="Segment">
+					<!--PARTY FUNCTION CODE QUALIFIER-->
+					<_3035>
+						<!--Ship from-->SF</_3035>
+					<!--PARTY IDENTIFICATION DETAILS-->
+					<C082 type="Composite">
+						<!--Party identifier-->
+						<_3039>16925810</_3039>
+						<!--Code list identification code-->
+						<_1131/>
+						<!--Code list responsible agency code-->
+						<_3055>
+							<!--Assigned by buyer or buyer&apos;s agent-->92</_3055>
+					</C082>
+					<!--NAME AND ADDRESS-->
+					<C058 type="Composite"/>
+					<!--PARTY NAME-->
+					<C080 type="Composite">
+						<!--Party name-->
+						<_3036>Mustermann AG</_3036>
+					</C080>
+					<!--STREET-->
+					<C059 type="Composite">
+						<!--Street and number or post office box identifier-->
+						<_3042>Example-Street 1</_3042>
+					</C059>
+					<!--CITY NAME-->
+					<_3164>HUMES-JORQUENAY</_3164>
+					<!--COUNTRY SUBDIVISION DETAILS-->
+					<C819 type="Composite"/>
+					<!--POSTAL IDENTIFICATION CODE-->
+					<_3251>52200</_3251>
+					<!--COUNTRY IDENTIFIER-->
+					<_3207>FR</_3207>
+				</NAD>
+				<!--PLACE/LOCATION IDENTIFICATION-->
+				<LOC type="Segment">
+					<!--LOCATION FUNCTION CODE QUALIFIER-->
+					<_3227>
+						<!--Place of loading-->9</_3227>
+					<!--LOCATION IDENTIFICATION-->
+					<C517 type="Composite">
+						<!--Location identifier-->
+						<_3225>503 17</_3225>
+					</C517>
+				</LOC>
+				<RFFLoop2 type="Loop">
+					<!--REFERENCE-->
+					<RFF type="Segment">
+						<!--REFERENCE-->
+						<C506 type="Composite">
+							<!--Reference code qualifier-->
+							<_1153>
+								<!--Account number-->ADE</_1153>
+							<!--Reference identifier-->
+							<_1154>143967</_1154>
+						</C506>
+					</RFF>
+				</RFFLoop2>
+			</NADLoop1>
+			<NADLoop1 type="Loop">
+				<!--NAME AND ADDRESS-->
+				<NAD type="Segment">
+					<!--PARTY FUNCTION CODE QUALIFIER-->
+					<_3035>
+						<!--Freight forwarder-->FW</_3035>
+					<!--PARTY IDENTIFICATION DETAILS-->
+					<C082 type="Composite">
+						<!--Party identifier-->
+						<_3039>BMW-AG</_3039>
+						<!--Code list identification code-->
+						<_1131/>
+						<!--Code list responsible agency code-->
+						<_3055>
+							<!--Assigned by buyer or buyer&apos;s agent-->92</_3055>
+					</C082>
+					<!--NAME AND ADDRESS-->
+					<C058 type="Composite"/>
+					<!--PARTY NAME-->
+					<C080 type="Composite">
+						<!--Party name-->
+						<_3036>BMW AG CENTRAL INVOICE CONTROL</_3036>
+					</C080>
+					<!--STREET-->
+					<C059 type="Composite">
+						<!--Street and number or post office box identifier-->
+						<_3042>Kreditorische Abrechnung</_3042>
+					</C059>
+					<!--CITY NAME-->
+					<_3164>D-80788 MUENCHEN</_3164>
+					<!--COUNTRY SUBDIVISION DETAILS-->
+					<C819 type="Composite"/>
+					<!--POSTAL IDENTIFICATION CODE-->
+					<_3251>80788</_3251>
+					<!--COUNTRY IDENTIFIER-->
+					<_3207>DE</_3207>
+				</NAD>
+			</NADLoop1>
+			<TODLoop1 type="Loop">
+				<!--TERMS OF DELIVERY OR TRANSPORT-->
+				<TOD type="Segment">
+					<!--DELIVERY OR TRANSPORT TERMS FUNCTION CODE-->
+					<_4055>
+						<!--Delivery condition-->6</_4055>
+					<!--TRANSPORT CHARGES PAYMENT METHOD CODE-->
+					<_4215/>
+					<!--TERMS OF DELIVERY OR TRANSPORT-->
+					<C100 type="Composite">
+						<!--Delivery or transport terms description code-->
+						<_4053>EXW</_4053>
+						<!--Code list identification code-->
+						<_1131/>
+						<!--Code list responsible agency code-->
+						<_3055/>
+						<!--Delivery or transport terms description-->
+						<_4052>01</_4052>
+					</C100>
+				</TOD>
+				<!--PLACE/LOCATION IDENTIFICATION-->
+				<LOC type="Segment">
+					<!--LOCATION FUNCTION CODE QUALIFIER-->
+					<_3227>
+						<!--Place of terms of delivery-->1</_3227>
+					<!--LOCATION IDENTIFICATION-->
+					<C517 type="Composite">
+						<!--Location identifier-->
+						<_3225>ARAD</_3225>
+					</C517>
+				</LOC>
+			</TODLoop1>
+			<TDTLoop1 type="Loop">
+				<!--TRANSPORT INFORMATION-->
+				<TDT type="Segment">
+					<!--TRANSPORT STAGE CODE QUALIFIER-->
+					<_8051>
+						<!--At departure-->12</_8051>
+					<!--MEANS OF TRANSPORT JOURNEY IDENTIFIER-->
+					<_8028>ER547DF1</_8028>
+					<!--MODE OF TRANSPORT-->
+					<C220 type="Composite">
+						<!--Transport mode name code-->
+						<_8067>30</_8067>
+					</C220>
+				</TDT>
+			</TDTLoop1>
+			<TDTLoop1 type="Loop">
+				<!--TRANSPORT INFORMATION-->
+				<TDT type="Segment">
+					<!--TRANSPORT STAGE CODE QUALIFIER-->
+					<_8051>
+						<!--Main-carriage transport-->20</_8051>
+					<!--MEANS OF TRANSPORT JOURNEY IDENTIFIER-->
+					<_8028>ER547DF1</_8028>
+					<!--MODE OF TRANSPORT-->
+					<C220 type="Composite">
+						<!--Transport mode name code-->
+						<_8067>30</_8067>
+					</C220>
+				</TDT>
+				<!--TRANSPORT MOVEMENT DETAILS-->
+				<TMD type="Segment">
+					<!--MOVEMENT TYPE-->
+					<C219 type="Composite">
+						<!--Movement type description code-->
+						<_8335>A</_8335>
+						<!--Movement type description-->
+						<_8334>Reason for a different service code</_8334>
+					</C219>
+				</TMD>
+			</TDTLoop1>
+			<EQDLoop1 type="Loop">
+				<!--EQUIPMENT DETAILS-->
+				<EQD type="Segment">
+					<!--EQUIPMENT TYPE CODE QUALIFIER-->
+					<_8053>
+						<!--Container-->CN</_8053>
+					<!--EQUIPMENT IDENTIFICATION-->
+					<C237 type="Composite">
+						<!--Equipment identifier-->
+						<_8260>ER547DF1</_8260>
+					</C237>
+				</EQD>
+				<!--MEASUREMENTS-->
+				<MEA type="Segment">
+					<!--MEASUREMENT PURPOSE CODE QUALIFIER-->
+					<_6311>
+						<!--Physical dimensions (product ordered)-->PD</_6311>
+					<!--MEASUREMENT DETAILS-->
+					<C502 type="Composite">
+						<!--Measured attribute code-->
+						<_6313>
+							<!--Height dimension-->HT</_6313>
+					</C502>
+					<!--VALUE/RANGE-->
+					<C174 type="Composite">
+						<!--Measurement unit code-->
+						<_6411>KGM</_6411>
+						<!--Measure-->
+						<_6314>863</_6314>
+					</C174>
+				</MEA>
+				<!--MEASUREMENTS-->
+				<MEA type="Segment">
+					<!--MEASUREMENT PURPOSE CODE QUALIFIER-->
+					<_6311>
+						<!--Physical dimensions (product ordered)-->PD</_6311>
+					<!--MEASUREMENT DETAILS-->
+					<C502 type="Composite">
+						<!--Measured attribute code-->
+						<_6313>
+							<!--Width dimension-->WD</_6313>
+					</C502>
+					<!--VALUE/RANGE-->
+					<C174 type="Composite">
+						<!--Measurement unit code-->
+						<_6411>KGM</_6411>
+						<!--Measure-->
+						<_6314>432</_6314>
+					</C174>
+				</MEA>
+				<!--MEASUREMENTS-->
+				<MEA type="Segment">
+					<!--MEASUREMENT PURPOSE CODE QUALIFIER-->
+					<_6311>
+						<!--Physical dimensions (product ordered)-->PD</_6311>
+					<!--MEASUREMENT DETAILS-->
+					<C502 type="Composite">
+						<!--Measured attribute code-->
+						<_6313>
+							<!--Length-->LN</_6313>
+					</C502>
+					<!--VALUE/RANGE-->
+					<C174 type="Composite">
+						<!--Measurement unit code-->
+						<_6411>KGM</_6411>
+						<!--Measure-->
+						<_6314>432</_6314>
+					</C174>
+				</MEA>
+				<!--MEASUREMENTS-->
+				<MEA type="Segment">
+					<!--MEASUREMENT PURPOSE CODE QUALIFIER-->
+					<_6311>
+						<!--Physical dimensions (product ordered)-->PD</_6311>
+					<!--MEASUREMENT DETAILS-->
+					<C502 type="Composite">
+						<!--Measured attribute code-->
+						<_6313>
+							<!--Net volume-->AAX</_6313>
+					</C502>
+					<!--VALUE/RANGE-->
+					<C174 type="Composite">
+						<!--Measurement unit code-->
+						<_6411>DMQ</_6411>
+						<!--Measure-->
+						<_6314>3852</_6314>
+					</C174>
+				</MEA>
+				<!--SEAL NUMBER-->
+				<SEL type="Segment">
+					<!--TRANSPORT UNIT SEAL IDENTIFIER-->
+					<_9308>UL2378178</_9308>
+				</SEL>
+			</EQDLoop1>
+			<CPSLoop1 type="Loop">
+				<!--CONSIGNMENT PACKING SEQUENCE-->
+				<CPS type="Segment">
+					<!--HIERARCHICAL STRUCTURE LEVEL IDENTIFIER-->
+					<_7164>1</_7164>
+					<!--HIERARCHICAL STRUCTURE PARENT IDENTIFIER-->
+					<_7166/>
+					<!--PACKAGING LEVEL CODE-->
+					<_7075>
+						<!--Outer-->3</_7075>
+				</CPS>
+				<PACLoop1 type="Loop">
+					<!--PACKAGE-->
+					<PAC type="Segment">
+						<!--PACKAGE QUANTITY-->
+						<_7224>1</_7224>
+						<!--PACKAGING DETAILS-->
+						<C531 type="Composite">
+							<!--Packaging level code-->
+							<_7075/>
+							<!--Packaging related description code-->
+							<_7233>
+								<!--Type of package-->35</_7233>
+							<!--Packaging terms and conditions code-->
+							<_7073>AAD</_7073>
+						</C531>
+						<!--PACKAGE TYPE-->
+						<C202 type="Composite">
+							<!--Package type description code-->
+							<_7065>3082352</_7065>
+							<!--Code list identification code-->
+							<_1131/>
+							<!--Code list responsible agency code-->
+							<_3055>
+								<!--Assigned by buyer or buyer&apos;s agent-->92</_3055>
+						</C202>
+					</PAC>
+					<!--MEASUREMENTS-->
+					<MEA type="Segment">
+						<!--MEASUREMENT PURPOSE CODE QUALIFIER-->
+						<_6311>
+							<!--Package measurement-->AAY</_6311>
+						<!--MEASUREMENT DETAILS-->
+						<C502 type="Composite">
+							<!--Measured attribute code-->
+							<_6313>
+								<!--Length-->LN</_6313>
+						</C502>
+						<!--VALUE/RANGE-->
+						<C174 type="Composite">
+							<!--Measurement unit code-->
+							<_6411>MMT</_6411>
+							<!--Measure-->
+							<_6314>1220</_6314>
+						</C174>
+					</MEA>
+					<!--MEASUREMENTS-->
+					<MEA type="Segment">
+						<!--MEASUREMENT PURPOSE CODE QUALIFIER-->
+						<_6311>
+							<!--Package measurement-->AAY</_6311>
+						<!--MEASUREMENT DETAILS-->
+						<C502 type="Composite">
+							<!--Measured attribute code-->
+							<_6313>
+								<!--Width dimension-->WD</_6313>
+						</C502>
+						<!--VALUE/RANGE-->
+						<C174 type="Composite">
+							<!--Measurement unit code-->
+							<_6411>MMT</_6411>
+							<!--Measure-->
+							<_6314>820</_6314>
+						</C174>
+					</MEA>
+					<!--MEASUREMENTS-->
+					<MEA type="Segment">
+						<!--MEASUREMENT PURPOSE CODE QUALIFIER-->
+						<_6311>
+							<!--Package measurement-->AAY</_6311>
+						<!--MEASUREMENT DETAILS-->
+						<C502 type="Composite">
+							<!--Measured attribute code-->
+							<_6313>
+								<!--Height dimension-->HT</_6313>
+						</C502>
+						<!--VALUE/RANGE-->
+						<C174 type="Composite">
+							<!--Measurement unit code-->
+							<_6411>MMT</_6411>
+							<!--Measure-->
+							<_6314>1100</_6314>
+						</C174>
+					</MEA>
+					<!--QUANTITY-->
+					<QTY type="Segment">
+						<!--QUANTITY DETAILS-->
+						<C186 type="Composite">
+							<!--Quantity type code qualifier-->
+							<_6063>
+								<!--Number of packages in handling unit-->189</_6063>
+							<!--Quantity-->
+							<_6060>8</_6060>
+							<!--Measurement unit code-->
+							<_6411>PCE</_6411>
+						</C186>
+					</QTY>
+					<PCILoop1 type="Loop">
+						<!--PACKAGE IDENTIFICATION-->
+						<PCI type="Segment">
+							<!--MARKING INSTRUCTIONS CODE-->
+							<_4233>
+								<!--Seller&apos;s instructions-->17</_4233>
+							<!--MARKS &amp; LABELS-->
+							<C210 type="Composite">
+								<!--Shipping marks description-->
+								<_7102>KLTPalletCover</_7102>
+							</C210>
+							<!--FULL OR EMPTY INDICATOR CODE-->
+							<_8169/>
+							<!--TYPE OF MARKING-->
+							<C827 type="Composite">
+								<!--Marking type code-->
+								<_7511>6J</_7511>
+								<!--Code list identification code-->
+								<_1131/>
+								<!--Code list responsible agency code-->
+								<_3055>
+									<!--ISO (International Organization for Standardization)-->5</_3055>
+							</C827>
+						</PCI>
+						<GINLoop1 type="Loop">
+							<!--GOODS IDENTITY NUMBER-->
+							<GIN type="Segment">
+								<!--OBJECT IDENTIFICATION CODE QUALIFIER-->
+								<_7405>
+									<!--Marking/label number-->ML</_7405>
+								<!--IDENTITY NUMBER RANGE-->
+								<C208 type="Composite">
+									<!--Object identifier-->
+									<_7402>123456805</_7402>
+								</C208>
+							</GIN>
+						</GINLoop1>
+						<GINLoop1 type="Loop">
+							<!--GOODS IDENTITY NUMBER-->
+							<GIN type="Segment">
+								<!--OBJECT IDENTIFICATION CODE QUALIFIER-->
+								<_7405>
+									<!--Serial shipping container code-->AW</_7405>
+								<!--IDENTITY NUMBER RANGE-->
+								<C208 type="Composite">
+									<!--Object identifier-->
+									<_7402>123456811</_7402>
+								</C208>
+							</GIN>
+						</GINLoop1>
+						<GINLoop1 type="Loop">
+							<!--GOODS IDENTITY NUMBER-->
+							<GIN type="Segment">
+								<!--OBJECT IDENTIFICATION CODE QUALIFIER-->
+								<_7405>
+									<!--Serial shipping container code-->AW</_7405>
+								<!--IDENTITY NUMBER RANGE-->
+								<C208 type="Composite">
+									<!--Object identifier-->
+									<_7402/>
+								</C208>
+								<!--IDENTITY NUMBER RANGE-->
+								<C208 repeat="false" type="Composite">
+									<!--Object identifier-->
+									<_7402>123456812</_7402>
+								</C208>
+							</GIN>
+						</GINLoop1>
+						<GINLoop1 type="Loop">
+							<!--GOODS IDENTITY NUMBER-->
+							<GIN type="Segment">
+								<!--OBJECT IDENTIFICATION CODE QUALIFIER-->
+								<_7405>
+									<!--Serial shipping container code-->AW</_7405>
+								<!--IDENTITY NUMBER RANGE-->
+								<C208 type="Composite">
+									<!--Object identifier-->
+									<_7402/>
+								</C208>
+								<!--IDENTITY NUMBER RANGE-->
+								<C208 repeat="false" type="Composite">
+									<!--Object identifier-->
+									<_7402>123456813</_7402>
+								</C208>
+							</GIN>
+						</GINLoop1>
+						<GINLoop1 type="Loop">
+							<!--GOODS IDENTITY NUMBER-->
+							<GIN type="Segment">
+								<!--OBJECT IDENTIFICATION CODE QUALIFIER-->
+								<_7405>
+									<!--Serial shipping container code-->AW</_7405>
+								<!--IDENTITY NUMBER RANGE-->
+								<C208 type="Composite">
+									<!--Object identifier-->
+									<_7402/>
+								</C208>
+								<!--IDENTITY NUMBER RANGE-->
+								<C208 repeat="false" type="Composite">
+									<!--Object identifier-->
+									<_7402>123456814</_7402>
+								</C208>
+							</GIN>
+						</GINLoop1>
+						<GINLoop1 type="Loop">
+							<!--GOODS IDENTITY NUMBER-->
+							<GIN type="Segment">
+								<!--OBJECT IDENTIFICATION CODE QUALIFIER-->
+								<_7405>
+									<!--Serial shipping container code-->AW</_7405>
+								<!--IDENTITY NUMBER RANGE-->
+								<C208 type="Composite">
+									<!--Object identifier-->
+									<_7402/>
+								</C208>
+								<!--IDENTITY NUMBER RANGE-->
+								<C208 repeat="false" type="Composite">
+									<!--Object identifier-->
+									<_7402>123456815</_7402>
+								</C208>
+							</GIN>
+						</GINLoop1>
+						<GINLoop1 type="Loop">
+							<!--GOODS IDENTITY NUMBER-->
+							<GIN type="Segment">
+								<!--OBJECT IDENTIFICATION CODE QUALIFIER-->
+								<_7405>
+									<!--Serial shipping container code-->AW</_7405>
+								<!--IDENTITY NUMBER RANGE-->
+								<C208 type="Composite">
+									<!--Object identifier-->
+									<_7402>123456816</_7402>
+								</C208>
+							</GIN>
+						</GINLoop1>
+						<GINLoop1 type="Loop">
+							<!--GOODS IDENTITY NUMBER-->
+							<GIN type="Segment">
+								<!--OBJECT IDENTIFICATION CODE QUALIFIER-->
+								<_7405>
+									<!--Serial shipping container code-->AW</_7405>
+								<!--IDENTITY NUMBER RANGE-->
+								<C208 type="Composite">
+									<!--Object identifier-->
+									<_7402/>
+								</C208>
+								<!--IDENTITY NUMBER RANGE-->
+								<C208 repeat="false" type="Composite">
+									<!--Object identifier-->
+									<_7402>123456817</_7402>
+								</C208>
+							</GIN>
+						</GINLoop1>
+						<GINLoop1 type="Loop">
+							<!--GOODS IDENTITY NUMBER-->
+							<GIN type="Segment">
+								<!--OBJECT IDENTIFICATION CODE QUALIFIER-->
+								<_7405>
+									<!--Serial shipping container code-->AW</_7405>
+								<!--IDENTITY NUMBER RANGE-->
+								<C208 type="Composite">
+									<!--Object identifier-->
+									<_7402/>
+								</C208>
+								<!--IDENTITY NUMBER RANGE-->
+								<C208 repeat="false" type="Composite">
+									<!--Object identifier-->
+									<_7402>123456818</_7402>
+								</C208>
+							</GIN>
+						</GINLoop1>
+					</PCILoop1>
+				</PACLoop1>
+				<PACLoop1 type="Loop">
+					<!--PACKAGE-->
+					<PAC type="Segment">
+						<!--PACKAGE QUANTITY-->
+						<_7224>1</_7224>
+						<!--PACKAGING DETAILS-->
+						<C531 type="Composite">
+							<!--Packaging level code-->
+							<_7075/>
+							<!--Packaging related description code-->
+							<_7233>
+								<!--Package protection-->37</_7233>
+							<!--Packaging terms and conditions code-->
+							<_7073>AAD</_7073>
+						</C531>
+						<!--PACKAGE TYPE-->
+						<C202 type="Composite">
+							<!--Package type description code-->
+							<_7065>3101208</_7065>
+							<!--Code list identification code-->
+							<_1131/>
+							<!--Code list responsible agency code-->
+							<_3055>
+								<!--Assigned by buyer or buyer&apos;s agent-->92</_3055>
+						</C202>
+					</PAC>
+				</PACLoop1>
+			</CPSLoop1>
+			<CPSLoop1 type="Loop">
+				<!--CONSIGNMENT PACKING SEQUENCE-->
+				<CPS type="Segment">
+					<!--HIERARCHICAL STRUCTURE LEVEL IDENTIFIER-->
+					<_7164>2</_7164>
+					<!--HIERARCHICAL STRUCTURE PARENT IDENTIFIER-->
+					<_7166/>
+					<!--PACKAGING LEVEL CODE-->
+					<_7075>
+						<!--Intermediate-->2</_7075>
+				</CPS>
+				<PACLoop1 type="Loop">
+					<!--PACKAGE-->
+					<PAC type="Segment">
+						<!--PACKAGE QUANTITY-->
+						<_7224>16</_7224>
+						<!--PACKAGING DETAILS-->
+						<C531 type="Composite">
+							<!--Packaging level code-->
+							<_7075/>
+							<!--Packaging related description code-->
+							<_7233>
+								<!--Type of package-->35</_7233>
+							<!--Packaging terms and conditions code-->
+							<_7073>AAD</_7073>
+						</C531>
+						<!--PACKAGE TYPE-->
+						<C202 type="Composite">
+							<!--Package type description code-->
+							<_7065>3108210</_7065>
+							<!--Code list identification code-->
+							<_1131/>
+							<!--Code list responsible agency code-->
+							<_3055>
+								<!--Assigned by buyer or buyer&apos;s agent-->92</_3055>
+						</C202>
+					</PAC>
+					<!--MEASUREMENTS-->
+					<MEA type="Segment">
+						<!--MEASUREMENT PURPOSE CODE QUALIFIER-->
+						<_6311>
+							<!--Package measurement-->AAY</_6311>
+						<!--MEASUREMENT DETAILS-->
+						<C502 type="Composite">
+							<!--Measured attribute code-->
+							<_6313>
+								<!--Length-->LN</_6313>
+						</C502>
+						<!--VALUE/RANGE-->
+						<C174 type="Composite">
+							<!--Measurement unit code-->
+							<_6411>MMT</_6411>
+							<!--Measure-->
+							<_6314>1220</_6314>
+						</C174>
+					</MEA>
+					<!--MEASUREMENTS-->
+					<MEA type="Segment">
+						<!--MEASUREMENT PURPOSE CODE QUALIFIER-->
+						<_6311>
+							<!--Package measurement-->AAY</_6311>
+						<!--MEASUREMENT DETAILS-->
+						<C502 type="Composite">
+							<!--Measured attribute code-->
+							<_6313>
+								<!--Width dimension-->WD</_6313>
+						</C502>
+						<!--VALUE/RANGE-->
+						<C174 type="Composite">
+							<!--Measurement unit code-->
+							<_6411>MMT</_6411>
+							<!--Measure-->
+							<_6314>820</_6314>
+						</C174>
+					</MEA>
+					<!--MEASUREMENTS-->
+					<MEA type="Segment">
+						<!--MEASUREMENT PURPOSE CODE QUALIFIER-->
+						<_6311>
+							<!--Package measurement-->AAY</_6311>
+						<!--MEASUREMENT DETAILS-->
+						<C502 type="Composite">
+							<!--Measured attribute code-->
+							<_6313>
+								<!--Height dimension-->HT</_6313>
+						</C502>
+						<!--VALUE/RANGE-->
+						<C174 type="Composite">
+							<!--Measurement unit code-->
+							<_6411>MMT</_6411>
+							<!--Measure-->
+							<_6314>1100</_6314>
+						</C174>
+					</MEA>
+					<!--QUANTITY-->
+					<QTY type="Segment">
+						<!--QUANTITY DETAILS-->
+						<C186 type="Composite">
+							<!--Quantity type code qualifier-->
+							<_6063>
+								<!--Number of packages in handling unit-->189</_6063>
+							<!--Quantity-->
+							<_6060>2</_6060>
+							<!--Measurement unit code-->
+							<_6411>PCE</_6411>
+						</C186>
+					</QTY>
+					<PCILoop1 type="Loop">
+						<!--PACKAGE IDENTIFICATION-->
+						<PCI type="Segment">
+							<!--MARKING INSTRUCTIONS CODE-->
+							<_4233>
+								<!--Seller&apos;s instructions-->17</_4233>
+							<!--MARKS &amp; LABELS-->
+							<C210 type="Composite">
+								<!--Shipping marks description-->
+								<_7102>KLT Des</_7102>
+							</C210>
+							<!--FULL OR EMPTY INDICATOR CODE-->
+							<_8169/>
+							<!--TYPE OF MARKING-->
+							<C827 type="Composite">
+								<!--Marking type code-->
+								<_7511>5J</_7511>
+								<!--Code list identification code-->
+								<_1131/>
+								<!--Code list responsible agency code-->
+								<_3055>
+									<!--ISO (International Organization for Standardization)-->5</_3055>
+							</C827>
+						</PCI>
+						<GINLoop1 type="Loop">
+							<!--GOODS IDENTITY NUMBER-->
+							<GIN type="Segment">
+								<!--OBJECT IDENTIFICATION CODE QUALIFIER-->
+								<_7405>
+									<!--Marking/label number-->ML</_7405>
+								<!--IDENTITY NUMBER RANGE-->
+								<C208 type="Composite">
+									<!--Object identifier-->
+									<_7402>123456811</_7402>
+								</C208>
+							</GIN>
+						</GINLoop1>
+						<GINLoop1 type="Loop">
+							<!--GOODS IDENTITY NUMBER-->
+							<GIN type="Segment">
+								<!--OBJECT IDENTIFICATION CODE QUALIFIER-->
+								<_7405>
+									<!--Serial shipping container code-->AW</_7405>
+								<!--IDENTITY NUMBER RANGE-->
+								<C208 type="Composite">
+									<!--Object identifier-->
+									<_7402>123456811</_7402>
+								</C208>
+							</GIN>
+						</GINLoop1>
+						<GINLoop1 type="Loop">
+							<!--GOODS IDENTITY NUMBER-->
+							<GIN type="Segment">
+								<!--OBJECT IDENTIFICATION CODE QUALIFIER-->
+								<_7405>
+									<!--Serial shipping container code-->AW</_7405>
+								<!--IDENTITY NUMBER RANGE-->
+								<C208 type="Composite">
+									<!--Object identifier-->
+									<_7402>123456812</_7402>
+								</C208>
+							</GIN>
+						</GINLoop1>
+					</PCILoop1>
+					<PCILoop1 type="Loop">
+						<!--PACKAGE IDENTIFICATION-->
+						<PCI type="Segment">
+							<!--MARKING INSTRUCTIONS CODE-->
+							<_4233>
+								<!--Seller&apos;s instructions-->17</_4233>
+							<!--MARKS &amp; LABELS-->
+							<C210 type="Composite">
+								<!--Shipping marks description-->
+								<_7102>KLT Des</_7102>
+							</C210>
+							<!--FULL OR EMPTY INDICATOR CODE-->
+							<_8169/>
+							<!--TYPE OF MARKING-->
+							<C827 type="Composite">
+								<!--Marking type code-->
+								<_7511>5J</_7511>
+								<!--Code list identification code-->
+								<_1131/>
+								<!--Code list responsible agency code-->
+								<_3055>
+									<!--ISO (International Organization for Standardization)-->5</_3055>
+							</C827>
+						</PCI>
+						<GINLoop1 type="Loop">
+							<!--GOODS IDENTITY NUMBER-->
+							<GIN type="Segment">
+								<!--OBJECT IDENTIFICATION CODE QUALIFIER-->
+								<_7405>
+									<!--Marking/label number-->ML</_7405>
+								<!--IDENTITY NUMBER RANGE-->
+								<C208 type="Composite">
+									<!--Object identifier-->
+									<_7402>123456811</_7402>
+								</C208>
+							</GIN>
+						</GINLoop1>
+						<GINLoop1 type="Loop">
+							<!--GOODS IDENTITY NUMBER-->
+							<GIN type="Segment">
+								<!--OBJECT IDENTIFICATION CODE QUALIFIER-->
+								<_7405>
+									<!--Serial shipping container code-->AW</_7405>
+								<!--IDENTITY NUMBER RANGE-->
+								<C208 type="Composite">
+									<!--Object identifier-->
+									<_7402>123456881</_7402>
+								</C208>
+							</GIN>
+						</GINLoop1>
+						<GINLoop1 type="Loop">
+							<!--GOODS IDENTITY NUMBER-->
+							<GIN type="Segment">
+								<!--OBJECT IDENTIFICATION CODE QUALIFIER-->
+								<_7405>
+									<!--Serial shipping container code-->AW</_7405>
+								<!--IDENTITY NUMBER RANGE-->
+								<C208 type="Composite">
+									<!--Object identifier-->
+									<_7402>123456881</_7402>
+								</C208>
+							</GIN>
+						</GINLoop1>
+					</PCILoop1>
+				</PACLoop1>
+			</CPSLoop1>
+			<CPSLoop1 type="Loop">
+				<!--CONSIGNMENT PACKING SEQUENCE-->
+				<CPS type="Segment">
+					<!--HIERARCHICAL STRUCTURE LEVEL IDENTIFIER-->
+					<_7164>2</_7164>
+					<!--HIERARCHICAL STRUCTURE PARENT IDENTIFIER-->
+					<_7166/>
+					<!--PACKAGING LEVEL CODE-->
+					<_7075>
+						<!--Inner-->1</_7075>
+				</CPS>
+				<PACLoop1 type="Loop">
+					<!--PACKAGE-->
+					<PAC type="Segment">
+						<!--PACKAGE QUANTITY-->
+						<_7224>4</_7224>
+						<!--PACKAGING DETAILS-->
+						<C531 type="Composite">
+							<!--Packaging level code-->
+							<_7075/>
+							<!--Packaging related description code-->
+							<_7233>
+								<!--Type of package-->35</_7233>
+							<!--Packaging terms and conditions code-->
+							<_7073>AAD</_7073>
+						</C531>
+						<!--PACKAGE TYPE-->
+						<C202 type="Composite">
+							<!--Package type description code-->
+							<_7065>3108210</_7065>
+							<!--Code list identification code-->
+							<_1131/>
+							<!--Code list responsible agency code-->
+							<_3055>
+								<!--Assigned by buyer or buyer&apos;s agent-->92</_3055>
+						</C202>
+					</PAC>
+					<!--MEASUREMENTS-->
+					<MEA type="Segment">
+						<!--MEASUREMENT PURPOSE CODE QUALIFIER-->
+						<_6311>
+							<!--Package measurement-->AAY</_6311>
+						<!--MEASUREMENT DETAILS-->
+						<C502 type="Composite">
+							<!--Measured attribute code-->
+							<_6313>
+								<!--Length-->LN</_6313>
+						</C502>
+						<!--VALUE/RANGE-->
+						<C174 type="Composite">
+							<!--Measurement unit code-->
+							<_6411>MMT</_6411>
+							<!--Measure-->
+							<_6314>1220</_6314>
+						</C174>
+					</MEA>
+					<!--MEASUREMENTS-->
+					<MEA type="Segment">
+						<!--MEASUREMENT PURPOSE CODE QUALIFIER-->
+						<_6311>
+							<!--Package measurement-->AAY</_6311>
+						<!--MEASUREMENT DETAILS-->
+						<C502 type="Composite">
+							<!--Measured attribute code-->
+							<_6313>
+								<!--Width dimension-->WD</_6313>
+						</C502>
+						<!--VALUE/RANGE-->
+						<C174 type="Composite">
+							<!--Measurement unit code-->
+							<_6411>MMT</_6411>
+							<!--Measure-->
+							<_6314>820</_6314>
+						</C174>
+					</MEA>
+					<!--MEASUREMENTS-->
+					<MEA type="Segment">
+						<!--MEASUREMENT PURPOSE CODE QUALIFIER-->
+						<_6311>
+							<!--Package measurement-->AAY</_6311>
+						<!--MEASUREMENT DETAILS-->
+						<C502 type="Composite">
+							<!--Measured attribute code-->
+							<_6313>
+								<!--Height dimension-->HT</_6313>
+						</C502>
+						<!--VALUE/RANGE-->
+						<C174 type="Composite">
+							<!--Measurement unit code-->
+							<_6411>MMT</_6411>
+							<!--Measure-->
+							<_6314>1100</_6314>
+						</C174>
+					</MEA>
+					<!--QUANTITY-->
+					<QTY type="Segment">
+						<!--QUANTITY DETAILS-->
+						<C186 type="Composite">
+							<!--Quantity type code qualifier-->
+							<_6063>
+								<!--Quantity per pack-->52</_6063>
+							<!--Quantity-->
+							<_6060>10</_6060>
+							<!--Measurement unit code-->
+							<_6411>PCE</_6411>
+						</C186>
+					</QTY>
+					<PCILoop1 type="Loop">
+						<!--PACKAGE IDENTIFICATION-->
+						<PCI type="Segment">
+							<!--MARKING INSTRUCTIONS CODE-->
+							<_4233>
+								<!--Seller&apos;s instructions-->17</_4233>
+							<!--MARKS &amp; LABELS-->
+							<C210 type="Composite">
+								<!--Shipping marks description-->
+								<_7102>KLT Des</_7102>
+							</C210>
+							<!--FULL OR EMPTY INDICATOR CODE-->
+							<_8169/>
+							<!--TYPE OF MARKING-->
+							<C827 type="Composite">
+								<!--Marking type code-->
+								<_7511>1J</_7511>
+								<!--Code list identification code-->
+								<_1131/>
+								<!--Code list responsible agency code-->
+								<_3055>
+									<!--ISO (International Organization for Standardization)-->5</_3055>
+							</C827>
+						</PCI>
+						<GINLoop1 type="Loop">
+							<!--GOODS IDENTITY NUMBER-->
+							<GIN type="Segment">
+								<!--OBJECT IDENTIFICATION CODE QUALIFIER-->
+								<_7405>
+									<!--Marking/label number-->ML</_7405>
+								<!--IDENTITY NUMBER RANGE-->
+								<C208 type="Composite">
+									<!--Object identifier-->
+									<_7402>123456811</_7402>
+								</C208>
+							</GIN>
+						</GINLoop1>
+						<GINLoop1 type="Loop">
+							<!--GOODS IDENTITY NUMBER-->
+							<GIN type="Segment">
+								<!--OBJECT IDENTIFICATION CODE QUALIFIER-->
+								<_7405>
+									<!--Marking/label number-->ML</_7405>
+								<!--IDENTITY NUMBER RANGE-->
+								<C208 type="Composite">
+									<!--Object identifier-->
+									<_7402>123456812</_7402>
+								</C208>
+							</GIN>
+						</GINLoop1>
+						<GINLoop1 type="Loop">
+							<!--GOODS IDENTITY NUMBER-->
+							<GIN type="Segment">
+								<!--OBJECT IDENTIFICATION CODE QUALIFIER-->
+								<_7405>
+									<!--Marking/label number-->ML</_7405>
+								<!--IDENTITY NUMBER RANGE-->
+								<C208 type="Composite">
+									<!--Object identifier-->
+									<_7402>123456813</_7402>
+								</C208>
+							</GIN>
+						</GINLoop1>
+						<GINLoop1 type="Loop">
+							<!--GOODS IDENTITY NUMBER-->
+							<GIN type="Segment">
+								<!--OBJECT IDENTIFICATION CODE QUALIFIER-->
+								<_7405>
+									<!--Marking/label number-->ML</_7405>
+								<!--IDENTITY NUMBER RANGE-->
+								<C208 type="Composite">
+									<!--Object identifier-->
+									<_7402>123456814</_7402>
+								</C208>
+							</GIN>
+						</GINLoop1>
+					</PCILoop1>
+				</PACLoop1>
+				<LINLoop1 type="Loop">
+					<!--LINE ITEM-->
+					<LIN type="Segment">
+						<!--LINE ITEM IDENTIFIER-->
+						<_1082/>
+						<!--ACTION CODE-->
+						<_1229/>
+						<!--ITEM NUMBER IDENTIFICATION-->
+						<C212 type="Composite">
+							<!--Item identifier-->
+							<_7140>1234567-01</_7140>
+							<!--Item type identification code-->
+							<_7143>
+								<!--Buyer&apos;s item number-->IN</_7143>
+						</C212>
+					</LIN>
+					<!--QUANTITY-->
+					<QTY type="Segment">
+						<!--QUANTITY DETAILS-->
+						<C186 type="Composite">
+							<!--Quantity type code qualifier-->
+							<_6063>
+								<!--Split quantity-->11</_6063>
+							<!--Quantity-->
+							<_6060>40</_6060>
+							<!--Measurement unit code-->
+							<_6411>PCE</_6411>
+						</C186>
+					</QTY>
+					<!--QUANTITY-->
+					<QTY type="Segment">
+						<!--QUANTITY DETAILS-->
+						<C186 type="Composite">
+							<!--Quantity type code qualifier-->
+							<_6063>
+								<!--Despatch quantity-->12</_6063>
+							<!--Quantity-->
+							<_6060>80</_6060>
+							<!--Measurement unit code-->
+							<_6411>PCE</_6411>
+						</C186>
+					</QTY>
+					<!--GOODS IDENTITY NUMBER-->
+					<GIN type="Segment">
+						<!--OBJECT IDENTIFICATION CODE QUALIFIER-->
+						<_7405>
+							<!--Serial number-->BN</_7405>
+						<!--IDENTITY NUMBER RANGE-->
+						<C208 type="Composite">
+							<!--Object identifier-->
+							<_7402>A025L001</_7402>
+						</C208>
+					</GIN>
+					<!--GOODS IDENTITY NUMBER-->
+					<GIN type="Segment">
+						<!--OBJECT IDENTIFICATION CODE QUALIFIER-->
+						<_7405>
+							<!--Serial number-->BN</_7405>
+						<!--IDENTITY NUMBER RANGE-->
+						<C208 type="Composite">
+							<!--Object identifier-->
+							<_7402>A025L002</_7402>
+						</C208>
+					</GIN>
+					<!--GOODS IDENTITY NUMBER-->
+					<GIN type="Segment">
+						<!--OBJECT IDENTIFICATION CODE QUALIFIER-->
+						<_7405>
+							<!--Serial number-->BN</_7405>
+						<!--IDENTITY NUMBER RANGE-->
+						<C208 type="Composite">
+							<!--Object identifier-->
+							<_7402>A025L003</_7402>
+						</C208>
+					</GIN>
+					<!--GOODS IDENTITY NUMBER-->
+					<GIN type="Segment">
+						<!--OBJECT IDENTIFICATION CODE QUALIFIER-->
+						<_7405>
+							<!--Serial number-->BN</_7405>
+						<!--IDENTITY NUMBER RANGE-->
+						<C208 type="Composite">
+							<!--Object identifier-->
+							<_7402>A025L004</_7402>
+						</C208>
+					</GIN>
+					<!--RELATED IDENTIFICATION NUMBERS-->
+					<GIR type="Segment">
+						<!--SET TYPE CODE QUALIFIER-->
+						<_7297>
+							<!--Product-->1</_7297>
+						<!--IDENTIFICATION NUMBER-->
+						<C206 type="Composite">
+							<!--Object identifier-->
+							<_7402>CHARGE 1</_7402>
+							<!--Object identification code qualifier-->
+							<_7405>
+								<!--Batch number-->BX</_7405>
+						</C206>
+					</GIR>
+					<RFFLoop3 type="Loop">
+						<!--REFERENCE-->
+						<RFF type="Segment">
+							<!--REFERENCE-->
+							<C506 type="Composite">
+								<!--Reference code qualifier-->
+								<_1153>
+									<!--Despatch note document identifier-->AAU</_1153>
+								<!--Reference identifier-->
+								<_1154>12345686</_1154>
+								<!--Document line identifier-->
+								<_1156>000001</_1156>
+							</C506>
+						</RFF>
+						<!--DATE/TIME/PERIOD-->
+						<DTM type="Segment">
+							<!--DATE/TIME/PERIOD-->
+							<C507 type="Composite">
+								<!--Date or time or period function code qualifier-->
+								<_2005>
+									<!--Reference date/time-->171</_2005>
+								<!--Date or time or period text-->
+								<_2380>20140403</_2380>
+								<!--Date or time or period format code-->
+								<_2379>
+									<!--CCYYMMDD-->102</_2379>
+							</C507>
+						</DTM>
+					</RFFLoop3>
+					<RFFLoop3 type="Loop">
+						<!--REFERENCE-->
+						<RFF type="Segment">
+							<!--REFERENCE-->
+							<C506 type="Composite">
+								<!--Reference code qualifier-->
+								<_1153>
+									<!--Order document identifier, buyer assigned-->ON</_1153>
+								<!--Reference identifier-->
+								<_1154>1234567</_1154>
+							</C506>
+						</RFF>
+					</RFFLoop3>
+				</LINLoop1>
+			</CPSLoop1>
+			<CPSLoop1 type="Loop">
+				<!--CONSIGNMENT PACKING SEQUENCE-->
+				<CPS type="Segment">
+					<!--HIERARCHICAL STRUCTURE LEVEL IDENTIFIER-->
+					<_7164>3</_7164>
+					<!--HIERARCHICAL STRUCTURE PARENT IDENTIFIER-->
+					<_7166/>
+					<!--PACKAGING LEVEL CODE-->
+					<_7075>
+						<!--Inner-->1</_7075>
+				</CPS>
+				<PACLoop1 type="Loop">
+					<!--PACKAGE-->
+					<PAC type="Segment">
+						<!--PACKAGE QUANTITY-->
+						<_7224>4</_7224>
+						<!--PACKAGING DETAILS-->
+						<C531 type="Composite">
+							<!--Packaging level code-->
+							<_7075/>
+							<!--Packaging related description code-->
+							<_7233>
+								<!--Type of package-->35</_7233>
+							<!--Packaging terms and conditions code-->
+							<_7073>AAD</_7073>
+						</C531>
+						<!--PACKAGE TYPE-->
+						<C202 type="Composite">
+							<!--Package type description code-->
+							<_7065>3108210</_7065>
+							<!--Code list identification code-->
+							<_1131/>
+							<!--Code list responsible agency code-->
+							<_3055>
+								<!--Assigned by buyer or buyer&apos;s agent-->92</_3055>
+						</C202>
+					</PAC>
+					<!--MEASUREMENTS-->
+					<MEA type="Segment">
+						<!--MEASUREMENT PURPOSE CODE QUALIFIER-->
+						<_6311>
+							<!--Package measurement-->AAY</_6311>
+						<!--MEASUREMENT DETAILS-->
+						<C502 type="Composite">
+							<!--Measured attribute code-->
+							<_6313>
+								<!--Length-->LN</_6313>
+						</C502>
+						<!--VALUE/RANGE-->
+						<C174 type="Composite">
+							<!--Measurement unit code-->
+							<_6411>MMT</_6411>
+							<!--Measure-->
+							<_6314>1220</_6314>
+						</C174>
+					</MEA>
+					<!--MEASUREMENTS-->
+					<MEA type="Segment">
+						<!--MEASUREMENT PURPOSE CODE QUALIFIER-->
+						<_6311>
+							<!--Package measurement-->AAY</_6311>
+						<!--MEASUREMENT DETAILS-->
+						<C502 type="Composite">
+							<!--Measured attribute code-->
+							<_6313>
+								<!--Width dimension-->WD</_6313>
+						</C502>
+						<!--VALUE/RANGE-->
+						<C174 type="Composite">
+							<!--Measurement unit code-->
+							<_6411>MMT</_6411>
+							<!--Measure-->
+							<_6314>820</_6314>
+						</C174>
+					</MEA>
+					<!--MEASUREMENTS-->
+					<MEA type="Segment">
+						<!--MEASUREMENT PURPOSE CODE QUALIFIER-->
+						<_6311>
+							<!--Package measurement-->AAY</_6311>
+						<!--MEASUREMENT DETAILS-->
+						<C502 type="Composite">
+							<!--Measured attribute code-->
+							<_6313>
+								<!--Height dimension-->HT</_6313>
+						</C502>
+						<!--VALUE/RANGE-->
+						<C174 type="Composite">
+							<!--Measurement unit code-->
+							<_6411>MMT</_6411>
+							<!--Measure-->
+							<_6314>1100</_6314>
+						</C174>
+					</MEA>
+					<!--QUANTITY-->
+					<QTY type="Segment">
+						<!--QUANTITY DETAILS-->
+						<C186 type="Composite">
+							<!--Quantity type code qualifier-->
+							<_6063>
+								<!--Quantity per pack-->52</_6063>
+							<!--Quantity-->
+							<_6060>10</_6060>
+							<!--Measurement unit code-->
+							<_6411>PCE</_6411>
+						</C186>
+					</QTY>
+					<PCILoop1 type="Loop">
+						<!--PACKAGE IDENTIFICATION-->
+						<PCI type="Segment">
+							<!--MARKING INSTRUCTIONS CODE-->
+							<_4233>
+								<!--Seller&apos;s instructions-->17</_4233>
+							<!--MARKS &amp; LABELS-->
+							<C210 type="Composite">
+								<!--Shipping marks description-->
+								<_7102>KLT Des</_7102>
+							</C210>
+							<!--FULL OR EMPTY INDICATOR CODE-->
+							<_8169/>
+							<!--TYPE OF MARKING-->
+							<C827 type="Composite">
+								<!--Marking type code-->
+								<_7511>1J</_7511>
+								<!--Code list identification code-->
+								<_1131/>
+								<!--Code list responsible agency code-->
+								<_3055>
+									<!--ISO (International Organization for Standardization)-->5</_3055>
+							</C827>
+						</PCI>
+						<GINLoop1 type="Loop">
+							<!--GOODS IDENTITY NUMBER-->
+							<GIN type="Segment">
+								<!--OBJECT IDENTIFICATION CODE QUALIFIER-->
+								<_7405>
+									<!--Marking/label number-->ML</_7405>
+								<!--IDENTITY NUMBER RANGE-->
+								<C208 type="Composite">
+									<!--Object identifier-->
+									<_7402>123456811</_7402>
+								</C208>
+							</GIN>
+						</GINLoop1>
+						<GINLoop1 type="Loop">
+							<!--GOODS IDENTITY NUMBER-->
+							<GIN type="Segment">
+								<!--OBJECT IDENTIFICATION CODE QUALIFIER-->
+								<_7405>
+									<!--Marking/label number-->ML</_7405>
+								<!--IDENTITY NUMBER RANGE-->
+								<C208 type="Composite">
+									<!--Object identifier-->
+									<_7402>123456812</_7402>
+								</C208>
+							</GIN>
+						</GINLoop1>
+						<GINLoop1 type="Loop">
+							<!--GOODS IDENTITY NUMBER-->
+							<GIN type="Segment">
+								<!--OBJECT IDENTIFICATION CODE QUALIFIER-->
+								<_7405>
+									<!--Marking/label number-->ML</_7405>
+								<!--IDENTITY NUMBER RANGE-->
+								<C208 type="Composite">
+									<!--Object identifier-->
+									<_7402>123456813</_7402>
+								</C208>
+							</GIN>
+						</GINLoop1>
+						<GINLoop1 type="Loop">
+							<!--GOODS IDENTITY NUMBER-->
+							<GIN type="Segment">
+								<!--OBJECT IDENTIFICATION CODE QUALIFIER-->
+								<_7405>
+									<!--Marking/label number-->ML</_7405>
+								<!--IDENTITY NUMBER RANGE-->
+								<C208 type="Composite">
+									<!--Object identifier-->
+									<_7402>123456814</_7402>
+								</C208>
+							</GIN>
+						</GINLoop1>
+					</PCILoop1>
+				</PACLoop1>
+				<LINLoop1 type="Loop">
+					<!--LINE ITEM-->
+					<LIN type="Segment">
+						<!--LINE ITEM IDENTIFIER-->
+						<_1082/>
+						<!--ACTION CODE-->
+						<_1229/>
+						<!--ITEM NUMBER IDENTIFICATION-->
+						<C212 type="Composite">
+							<!--Item identifier-->
+							<_7140>1234567-01</_7140>
+							<!--Item type identification code-->
+							<_7143>
+								<!--Buyer&apos;s item number-->IN</_7143>
+						</C212>
+					</LIN>
+					<!--QUANTITY-->
+					<QTY type="Segment">
+						<!--QUANTITY DETAILS-->
+						<C186 type="Composite">
+							<!--Quantity type code qualifier-->
+							<_6063>
+								<!--Split quantity-->11</_6063>
+							<!--Quantity-->
+							<_6060>40</_6060>
+							<!--Measurement unit code-->
+							<_6411>PCE</_6411>
+						</C186>
+					</QTY>
+					<!--QUANTITY-->
+					<QTY type="Segment">
+						<!--QUANTITY DETAILS-->
+						<C186 type="Composite">
+							<!--Quantity type code qualifier-->
+							<_6063>
+								<!--Despatch quantity-->12</_6063>
+							<!--Quantity-->
+							<_6060>80</_6060>
+							<!--Measurement unit code-->
+							<_6411>PCE</_6411>
+						</C186>
+					</QTY>
+					<!--GOODS IDENTITY NUMBER-->
+					<GIN type="Segment">
+						<!--OBJECT IDENTIFICATION CODE QUALIFIER-->
+						<_7405>
+							<!--Serial number-->BN</_7405>
+						<!--IDENTITY NUMBER RANGE-->
+						<C208 type="Composite">
+							<!--Object identifier-->
+							<_7402>A025L005</_7402>
+						</C208>
+					</GIN>
+					<!--GOODS IDENTITY NUMBER-->
+					<GIN type="Segment">
+						<!--OBJECT IDENTIFICATION CODE QUALIFIER-->
+						<_7405>
+							<!--Serial number-->BN</_7405>
+						<!--IDENTITY NUMBER RANGE-->
+						<C208 type="Composite">
+							<!--Object identifier-->
+							<_7402>A025L006</_7402>
+						</C208>
+					</GIN>
+					<!--GOODS IDENTITY NUMBER-->
+					<GIN type="Segment">
+						<!--OBJECT IDENTIFICATION CODE QUALIFIER-->
+						<_7405>
+							<!--Serial number-->BN</_7405>
+						<!--IDENTITY NUMBER RANGE-->
+						<C208 type="Composite">
+							<!--Object identifier-->
+							<_7402>A025L007</_7402>
+						</C208>
+					</GIN>
+					<!--GOODS IDENTITY NUMBER-->
+					<GIN type="Segment">
+						<!--OBJECT IDENTIFICATION CODE QUALIFIER-->
+						<_7405>
+							<!--Serial number-->BN</_7405>
+						<!--IDENTITY NUMBER RANGE-->
+						<C208 type="Composite">
+							<!--Object identifier-->
+							<_7402>A025L008</_7402>
+						</C208>
+					</GIN>
+					<!--RELATED IDENTIFICATION NUMBERS-->
+					<GIR type="Segment">
+						<!--SET TYPE CODE QUALIFIER-->
+						<_7297>
+							<!--Product-->1</_7297>
+						<!--IDENTIFICATION NUMBER-->
+						<C206 type="Composite">
+							<!--Object identifier-->
+							<_7402>CHARGE 2</_7402>
+							<!--Object identification code qualifier-->
+							<_7405>
+								<!--Batch number-->BX</_7405>
+						</C206>
+					</GIR>
+					<RFFLoop3 type="Loop">
+						<!--REFERENCE-->
+						<RFF type="Segment">
+							<!--REFERENCE-->
+							<C506 type="Composite">
+								<!--Reference code qualifier-->
+								<_1153>
+									<!--Despatch note document identifier-->AAU</_1153>
+								<!--Reference identifier-->
+								<_1154>12345686</_1154>
+								<!--Document line identifier-->
+								<_1156>000001</_1156>
+							</C506>
+						</RFF>
+						<!--DATE/TIME/PERIOD-->
+						<DTM type="Segment">
+							<!--DATE/TIME/PERIOD-->
+							<C507 type="Composite">
+								<!--Date or time or period function code qualifier-->
+								<_2005>
+									<!--Reference date/time-->171</_2005>
+								<!--Date or time or period text-->
+								<_2380>20140403</_2380>
+								<!--Date or time or period format code-->
+								<_2379>
+									<!--CCYYMMDD-->102</_2379>
+							</C507>
+						</DTM>
+					</RFFLoop3>
+					<RFFLoop3 type="Loop">
+						<!--REFERENCE-->
+						<RFF type="Segment">
+							<!--REFERENCE-->
+							<C506 type="Composite">
+								<!--Reference code qualifier-->
+								<_1153>
+									<!--Order document identifier, buyer assigned-->ON</_1153>
+								<!--Reference identifier-->
+								<_1154>1234567</_1154>
+							</C506>
+						</RFF>
+					</RFFLoop3>
+					<LOCLoop2 type="Loop">
+						<!--PLACE/LOCATION IDENTIFICATION-->
+						<LOC type="Segment">
+							<!--LOCATION FUNCTION CODE QUALIFIER-->
+							<_3227>
+								<!--Additional internal destination-->159</_3227>
+							<!--LOCATION IDENTIFICATION-->
+							<C517 type="Composite">
+								<!--Location identifier-->
+								<_3225>50020020L</_3225>
+							</C517>
+						</LOC>
+					</LOCLoop2>
+				</LINLoop1>
+			</CPSLoop1>
+			<CPSLoop1 type="Loop">
+				<!--CONSIGNMENT PACKING SEQUENCE-->
+				<CPS type="Segment">
+					<!--HIERARCHICAL STRUCTURE LEVEL IDENTIFIER-->
+					<_7164>1</_7164>
+					<!--HIERARCHICAL STRUCTURE PARENT IDENTIFIER-->
+					<_7166/>
+					<!--PACKAGING LEVEL CODE-->
+					<_7075>
+						<!--No packaging hierarchy-->4</_7075>
+				</CPS>
+				<PACLoop1 type="Loop">
+					<!--PACKAGE-->
+					<PAC type="Segment">
+						<!--PACKAGE QUANTITY-->
+						<_7224>3</_7224>
+						<!--PACKAGING DETAILS-->
+						<C531 type="Composite">
+							<!--Packaging level code-->
+							<_7075/>
+							<!--Packaging related description code-->
+							<_7233>
+								<!--Type of package-->35</_7233>
+							<!--Packaging terms and conditions code-->
+							<_7073>AAC</_7073>
+						</C531>
+						<!--PACKAGE TYPE-->
+						<C202 type="Composite">
+							<!--Package type description code-->
+							<_7065>6213967</_7065>
+							<!--Code list identification code-->
+							<_1131/>
+							<!--Code list responsible agency code-->
+							<_3055>
+								<!--Assigned by buyer or buyer&apos;s agent-->92</_3055>
+						</C202>
+					</PAC>
+					<!--MEASUREMENTS-->
+					<MEA type="Segment">
+						<!--MEASUREMENT PURPOSE CODE QUALIFIER-->
+						<_6311>
+							<!--Package measurement-->AAY</_6311>
+						<!--MEASUREMENT DETAILS-->
+						<C502 type="Composite">
+							<!--Measured attribute code-->
+							<_6313>
+								<!--Length-->LN</_6313>
+						</C502>
+						<!--VALUE/RANGE-->
+						<C174 type="Composite">
+							<!--Measurement unit code-->
+							<_6411>MMT</_6411>
+							<!--Measure-->
+							<_6314>1370</_6314>
+						</C174>
+					</MEA>
+					<!--MEASUREMENTS-->
+					<MEA type="Segment">
+						<!--MEASUREMENT PURPOSE CODE QUALIFIER-->
+						<_6311>
+							<!--Package measurement-->AAY</_6311>
+						<!--MEASUREMENT DETAILS-->
+						<C502 type="Composite">
+							<!--Measured attribute code-->
+							<_6313>
+								<!--Width dimension-->WD</_6313>
+						</C502>
+						<!--VALUE/RANGE-->
+						<C174 type="Composite">
+							<!--Measurement unit code-->
+							<_6411>MMT</_6411>
+							<!--Measure-->
+							<_6314>760</_6314>
+						</C174>
+					</MEA>
+					<!--MEASUREMENTS-->
+					<MEA type="Segment">
+						<!--MEASUREMENT PURPOSE CODE QUALIFIER-->
+						<_6311>
+							<!--Package measurement-->AAY</_6311>
+						<!--MEASUREMENT DETAILS-->
+						<C502 type="Composite">
+							<!--Measured attribute code-->
+							<_6313>
+								<!--Height dimension-->HT</_6313>
+						</C502>
+						<!--VALUE/RANGE-->
+						<C174 type="Composite">
+							<!--Measurement unit code-->
+							<_6411>MMT</_6411>
+							<!--Measure-->
+							<_6314>990</_6314>
+						</C174>
+					</MEA>
+					<!--QUANTITY-->
+					<QTY type="Segment">
+						<!--QUANTITY DETAILS-->
+						<C186 type="Composite">
+							<!--Quantity type code qualifier-->
+							<_6063>
+								<!--Quantity per pack-->52</_6063>
+							<!--Quantity-->
+							<_6060>24</_6060>
+							<!--Measurement unit code-->
+							<_6411>PCE</_6411>
+						</C186>
+					</QTY>
+					<PCILoop1 type="Loop">
+						<!--PACKAGE IDENTIFICATION-->
+						<PCI type="Segment">
+							<!--MARKING INSTRUCTIONS CODE-->
+							<_4233>
+								<!--Seller&apos;s instructions-->17</_4233>
+							<!--MARKS &amp; LABELS-->
+							<C210 type="Composite">
+								<!--Shipping marks description-->
+								<_7102>Special bin</_7102>
+							</C210>
+							<!--FULL OR EMPTY INDICATOR CODE-->
+							<_8169/>
+							<!--TYPE OF MARKING-->
+							<C827 type="Composite">
+								<!--Marking type code-->
+								<_7511>1J</_7511>
+								<!--Code list identification code-->
+								<_1131/>
+								<!--Code list responsible agency code-->
+								<_3055>
+									<!--ISO (International Organization for Standardization)-->5</_3055>
+							</C827>
+						</PCI>
+						<GINLoop1 type="Loop">
+							<!--GOODS IDENTITY NUMBER-->
+							<GIN type="Segment">
+								<!--OBJECT IDENTIFICATION CODE QUALIFIER-->
+								<_7405>
+									<!--Marking/label number-->ML</_7405>
+								<!--IDENTITY NUMBER RANGE-->
+								<C208 type="Composite">
+									<!--Object identifier-->
+									<_7402>123456791</_7402>
+								</C208>
+							</GIN>
+						</GINLoop1>
+						<GINLoop1 type="Loop">
+							<!--GOODS IDENTITY NUMBER-->
+							<GIN type="Segment">
+								<!--OBJECT IDENTIFICATION CODE QUALIFIER-->
+								<_7405>
+									<!--Marking/label number-->ML</_7405>
+								<!--IDENTITY NUMBER RANGE-->
+								<C208 type="Composite">
+									<!--Object identifier-->
+									<_7402>123456792</_7402>
+								</C208>
+							</GIN>
+						</GINLoop1>
+						<GINLoop1 type="Loop">
+							<!--GOODS IDENTITY NUMBER-->
+							<GIN type="Segment">
+								<!--OBJECT IDENTIFICATION CODE QUALIFIER-->
+								<_7405>
+									<!--Marking/label number-->ML</_7405>
+								<!--IDENTITY NUMBER RANGE-->
+								<C208 type="Composite">
+									<!--Object identifier-->
+									<_7402>123456792</_7402>
+								</C208>
+							</GIN>
+						</GINLoop1>
+					</PCILoop1>
+				</PACLoop1>
+				<LINLoop1 type="Loop">
+					<!--LINE ITEM-->
+					<LIN type="Segment">
+						<!--LINE ITEM IDENTIFIER-->
+						<_1082/>
+						<!--ACTION CODE-->
+						<_1229/>
+						<!--ITEM NUMBER IDENTIFICATION-->
+						<C212 type="Composite">
+							<!--Item identifier-->
+							<_7140>1234567-01</_7140>
+							<!--Item type identification code-->
+							<_7143>
+								<!--Buyer&apos;s item number-->IN</_7143>
+						</C212>
+					</LIN>
+					<!--QUANTITY-->
+					<QTY type="Segment">
+						<!--QUANTITY DETAILS-->
+						<C186 type="Composite">
+							<!--Quantity type code qualifier-->
+							<_6063>
+								<!--Despatch quantity-->12</_6063>
+							<!--Quantity-->
+							<_6060>72</_6060>
+							<!--Measurement unit code-->
+							<_6411>PCE</_6411>
+						</C186>
+					</QTY>
+					<RFFLoop3 type="Loop">
+						<!--REFERENCE-->
+						<RFF type="Segment">
+							<!--REFERENCE-->
+							<C506 type="Composite">
+								<!--Reference code qualifier-->
+								<_1153>
+									<!--Despatch note document identifier-->AAU</_1153>
+								<!--Reference identifier-->
+								<_1154>1234568</_1154>
+								<!--Document line identifier-->
+								<_1156>000001</_1156>
+							</C506>
+						</RFF>
+						<!--DATE/TIME/PERIOD-->
+						<DTM type="Segment">
+							<!--DATE/TIME/PERIOD-->
+							<C507 type="Composite">
+								<!--Date or time or period function code qualifier-->
+								<_2005>
+									<!--Reference date/time-->171</_2005>
+								<!--Date or time or period text-->
+								<_2380>20140403</_2380>
+								<!--Date or time or period format code-->
+								<_2379>
+									<!--CCYYMMDD-->102</_2379>
+							</C507>
+						</DTM>
+					</RFFLoop3>
+					<RFFLoop3 type="Loop">
+						<!--REFERENCE-->
+						<RFF type="Segment">
+							<!--REFERENCE-->
+							<C506 type="Composite">
+								<!--Reference code qualifier-->
+								<_1153>
+									<!--Order document identifier, buyer assigned-->ON</_1153>
+								<!--Reference identifier-->
+								<_1154>1234567</_1154>
+							</C506>
+						</RFF>
+					</RFFLoop3>
+				</LINLoop1>
+			</CPSLoop1>
+		</TX-D07A-DESADV>
+	</TransactionSet>
+</Interchange>

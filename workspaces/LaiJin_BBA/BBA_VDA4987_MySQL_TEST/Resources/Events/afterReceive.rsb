@@ -1,0 +1,33 @@
+<!-- NOTE: Do not edit arc:info -->
+<arc:info title="After Receive"  desc="This event is fired after receiving a file.">
+  <input name="WorkspaceId"      desc="The id of the workspace that is receiving file." />
+  <input name="ConnectorId"      desc="The id of the connector that is receiving file." />
+  <input name="Direction"        desc="The direction of transaction." />
+  <input name="Filename"         desc="The name of the file that was received." />
+  <input name="FilePath"         desc="The path of the file that was received." />
+  <input name="Attachment#"      desc="The path of the attachment was received." />
+  <input name="MessageId"        desc="The Id of the transaction." />
+  <input name="ErrorMessage"     desc="If an error occurred, this will contain the error message." />
+</arc:info>
+
+
+
+<!-- Code goes here -->
+
+<rsb:call op="xmlDOMSearch?uri=[FilePath]&xpath=/Items/std_desadv_header">
+  <rsb:set attr="asn.id" value="[xpath('id')]" />
+  <rsb:set attr="asn.status" value="[xpath('status')]" />
+</rsb:call>
+
+<rsb:try>
+  <rsb:finally>
+    <rsb:set attr="message.portid" value="[portid]"/>
+    <rsb:set attr="message.direction" value="[direction]"/>
+    <rsb:set attr="message.messageid" value="[messageid]"/>
+    <rsb:set attr="message.header:id" value="[asn.id]"/>
+    <rsb:set attr="message.header:status" value="[asn.status]"/>
+    <rsb:set attr="message.duplicate" value="Overwrite"/>
+    <rsb:call op="portSetMessageHeader" in="message"/>
+    
+  </rsb:finally>
+</rsb:try>

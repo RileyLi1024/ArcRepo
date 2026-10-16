@@ -1,0 +1,645 @@
+<Interchange Delimiters=":*. ^~" xmlns="http://www.rssbus.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Meta>
+<!--Authorization Information Qualifier-->
+<ISA01><!--No Authorization Information Present (No Meaningful Information in I02)-->00</ISA01>
+<!--Authorization Information-->
+<ISA02>          </ISA02>
+<!--Security Information Qualifer-->
+<ISA03>00</ISA03>
+<!--Security Information-->
+<ISA04>          </ISA04>
+<!--Interchange ID Qualifier-->
+<ISA05><!--Duns Plus Suffix-->14</ISA05>
+<!--Interchange Sender ID-->
+<ISA06>060704780001900</ISA06>
+<!--Interchange ID Qualifier-->
+<ISA07><!--Mutually Defined-->ZZ</ISA07>
+<!--Interchange Receiver ID-->
+<ISA08>APXL           </ISA08>
+<!--Interchange Date-->
+<ISA09>231101</ISA09>
+<!--Interchange Time-->
+<ISA10>2259</ISA10>
+<!--Interchange Control Standards Identifier-->
+<ISA11>U</ISA11>
+<!--Interchange Control Version Number Code-->
+<ISA12>00701</ISA12>
+<!--Inter Control Number-->
+<ISA13>000013321</ISA13>
+<!--Acknowlegment Requested Code-->
+<ISA14>1</ISA14>
+<!--Interchange Usage Indicator Code-->
+<ISA15><!--Production Data-->P</ISA15>
+<!--Component Element Separator-->
+<ISA16></ISA16>
+</Meta>
+	<FunctionalGroup>
+		<TransactionSet>
+			<TX-00701-810 type="TransactionSet">
+				<Meta>
+					<!--Transaction Set Identifier Code-->
+					<ST01><!--Invoice-->810</ST01>
+					<!--Transaction Set Control Number-->
+					<ST02>0001</ST02>
+				</Meta>
+				<!--Beginning Segment for Invoice-->
+				<BIG type="Segment">
+					<!--Date-->
+					<BIG01>20210915</BIG01>
+					<!--Invoice Number-->
+					<BIG02>0914559916</BIG02>
+					<!--Date-->
+					<BIG03 xsi:nil="true"/>
+					<!--Purchase Order Number-->
+					<BIG04>PVGQSM013142</BIG04>
+				</BIG>
+				<!--Currency-->
+				<CUR type="Segment">
+					<!--Entity Identifier Code-->
+					<CUR01><!--Selling Party-->SE</CUR01>
+					<!--Currency Code-->
+					<CUR02>USD</CUR02>
+				</CUR>
+				<!--Reference Information-->
+				<REF type="Segment">
+					<!--Reference Identification Qualifier-->
+					<REF01><!--Air Waybill Number-->AW</REF01>
+					<!--Reference Identification-->
+					<REF02>PVGQSM013142</REF02>
+				</REF>
+				<!--Reference Information-->
+				<REF type="Segment">
+					<!--Reference Identification Qualifier-->
+					<REF01><!--Security Type-->8R</REF01>
+					<!--Reference Identification-->
+					<REF02>DIRECT SHIP</REF02>
+					<!--Description-->
+					<REF03>IM</REF03>
+				</REF>
+				<!--Reference Information-->
+				<REF type="Segment">
+					<!--Reference Identification Qualifier-->
+					<REF01><!--Export Declaration-->ED</REF01>
+					<!--Reference Identification-->
+					<REF02>PVG</REF02>
+				</REF>
+				<!--Reference Information-->
+				<REF type="Segment">
+					<!--Reference Identification Qualifier-->
+					<REF01><!--Mutually Defined-->ZZ</REF01>
+					<!--Reference Identification-->
+					<REF02>JFK</REF02>
+				</REF>
+				<!--Reference Information-->
+				<REF type="Segment">
+					<!--Reference Identification Qualifier-->
+					<REF01><!--Transportation Priority Number-->XE</REF01>
+					<!--Reference Identification-->
+					<REF02>AIR</REF02>
+				</REF>
+				<!--Reference Information-->
+				<REF type="Segment">
+					<!--Reference Identification Qualifier-->
+					<REF01><!--Reserve Assembly Line Feed Location-->RL</REF01>
+					<!--Reference Identification-->
+					<REF02>US</REF02>
+				</REF>
+				<!--Reference Information-->
+				<REF type="Segment">
+					<!--Reference Identification Qualifier-->
+					<REF01><!--Zone-->6K</REF01>
+					<!--Reference Identification-->
+					<REF02>V106</REF02>
+				</REF>
+				<!--Yes/No Question-->
+				<YNQ type="Segment">
+					<!--Condition Indicator Code-->
+					<YNQ01><!--Item is a Set-->QM</YNQ01>
+					<!--Yes/No Condition or Response Code-->
+					<YNQ02><!--No-->N</YNQ02>
+					<!--Date Time Period Format Qualifier-->
+					<YNQ03/>
+					<!--Date Time Period-->
+					<YNQ04 xsi:nil="true"/>
+					<!--Free-form Message Text-->
+					<YNQ05>These commodities, technology, or software were exported from China in accordance with the Export Administration Regulations.Diversion contra to U.S. law is prohibited.</YNQ05>
+				</YNQ>
+				<N1Loop1 type="Loop">
+					<!--Party Identification-->
+					<N1 type="Segment">
+						<!--Entity Identifier Code-->
+						<N101><!--Sold To If Different From Bill To-->SO</N101>
+						<!--Name-->
+						<N102>Apple Inc</N102>
+					</N1>
+					<!--Geographic Location-->
+					<N4 type="Segment">
+						<!--City Name-->
+						<N401>ELK GROVE</N401>
+						<!--State or Province Code-->
+						<N402 xsi:nil="true"/>
+						<!--Postal Code-->
+						<N403>95758</N403>
+						<!--Country Code-->
+						<N404>US</N404>
+					</N4>
+					<!--Administrative Communications Contact-->
+					<PER type="Segment">
+						<!--Contact Function Code-->
+						<PER01><!--Receiving Contact-->RE</PER01>
+						<!--Name-->
+						<PER02 xsi:nil="true"/>
+						<!--Communication Number Qualifier-->
+						<PER03/>
+						<!--Communication Number-->
+						<PER04 xsi:nil="true"/>
+						<!--Communication Number Qualifier-->
+						<PER05/>
+						<!--Communication Number-->
+						<PER06 xsi:nil="true"/>
+						<!--Communication Number Qualifier-->
+						<PER07><!--Telemail-->TM</PER07>
+						<!--Communication Number-->
+						<PER08>California</PER08>
+						<!--Contact Inquiry Reference-->
+						<PER09>USA</PER09>
+					</PER>
+				</N1Loop1>
+				<N1Loop1 type="Loop">
+					<!--Party Identification-->
+					<N1 type="Segment">
+						<!--Entity Identifier Code-->
+						<N101><!--Ship From-->SF</N101>
+						<!--Name-->
+						<N102>QUANTA Shanghai Manufacturing Corp</N102>
+					</N1>
+					<!--Party Location-->
+					<N3 type="Segment">
+						<!--Address Information-->
+						<N301>No. 68, Sanzhuang Roadang</N301>
+					</N3>
+					<!--Geographic Location-->
+					<N4 type="Segment">
+						<!--City Name-->
+						<N401>Shanghai</N401>
+						<!--State or Province Code-->
+						<N402 xsi:nil="true"/>
+						<!--Postal Code-->
+						<N403 xsi:nil="true"/>
+						<!--Country Code-->
+						<N404>CN</N404>
+					</N4>
+					<!--Administrative Communications Contact-->
+					<PER type="Segment">
+						<!--Contact Function Code-->
+						<PER01><!--Receiving Contact-->RE</PER01>
+						<!--Name-->
+						<PER02 xsi:nil="true"/>
+						<!--Communication Number Qualifier-->
+						<PER03/>
+						<!--Communication Number-->
+						<PER04 xsi:nil="true"/>
+						<!--Communication Number Qualifier-->
+						<PER05/>
+						<!--Communication Number-->
+						<PER06 xsi:nil="true"/>
+						<!--Communication Number Qualifier-->
+						<PER07/>
+						<!--Communication Number-->
+						<PER08 xsi:nil="true"/>
+						<!--Contact Inquiry Reference-->
+						<PER09>China</PER09>
+					</PER>
+				</N1Loop1>
+				<N1Loop1 type="Loop">
+					<!--Party Identification-->
+					<N1 type="Segment">
+						<!--Entity Identifier Code-->
+						<N101><!--Ship To-->ST</N101>
+						<!--Name-->
+						<N102>Multiple Consignees</N102>
+					</N1>
+					<!--Additional Name Information-->
+					<N2 type="Segment">
+						<!--Name-->
+						<N201>C/O Apple Inc</N201>
+						<!--Name-->
+						<N202>2911 Laguna Blvd. Bldg C</N202>
+					</N2>
+					<!--Geographic Location-->
+					<N4 type="Segment">
+						<!--City Name-->
+						<N401>ELK GROVE</N401>
+						<!--State or Province Code-->
+						<N402 xsi:nil="true"/>
+						<!--Postal Code-->
+						<N403>95758</N403>
+						<!--Country Code-->
+						<N404>US</N404>
+					</N4>
+					<!--Administrative Communications Contact-->
+					<PER type="Segment">
+						<!--Contact Function Code-->
+						<PER01><!--Receiving Contact-->RE</PER01>
+						<!--Name-->
+						<PER02 xsi:nil="true"/>
+						<!--Communication Number Qualifier-->
+						<PER03/>
+						<!--Communication Number-->
+						<PER04 xsi:nil="true"/>
+						<!--Communication Number Qualifier-->
+						<PER05/>
+						<!--Communication Number-->
+						<PER06 xsi:nil="true"/>
+						<!--Communication Number Qualifier-->
+						<PER07><!--Telemail-->TM</PER07>
+						<!--Communication Number-->
+						<PER08>California</PER08>
+						<!--Contact Inquiry Reference-->
+						<PER09>USA</PER09>
+					</PER>
+				</N1Loop1>
+				<N1Loop1 type="Loop">
+					<!--Party Identification-->
+					<N1 type="Segment">
+						<!--Entity Identifier Code-->
+						<N101><!--Broker-->BR</N101>
+						<!--Name-->
+						<N102>UPS SUPPLY CHAIN SOLUTIONS</N102>
+					</N1>
+					<!--Party Location-->
+					<N3 type="Segment">
+						<!--Address Information-->
+						<N301>P.O. BOX 730900</N301>
+						<!--Address Information-->
+						<N302>TX</N302>
+					</N3>
+					<!--Geographic Location-->
+					<N4 type="Segment">
+						<!--City Name-->
+						<N401>DALLAS</N401>
+						<!--State or Province Code-->
+						<N402 xsi:nil="true"/>
+						<!--Postal Code-->
+						<N403>75373-090</N403>
+						<!--Country Code-->
+						<N404>US</N404>
+						<!--Location Qualifier-->
+						<N405><!--District-->34</N405>
+						<!--Location Identifier-->
+						<N406>DALLAS</N406>
+					</N4>
+					<!--Administrative Communications Contact-->
+					<PER type="Segment">
+						<!--Contact Function Code-->
+						<PER01><!--Receiving Contact-->RE</PER01>
+						<!--Name-->
+						<PER02 xsi:nil="true"/>
+						<!--Communication Number Qualifier-->
+						<PER03/>
+						<!--Communication Number-->
+						<PER04 xsi:nil="true"/>
+						<!--Communication Number Qualifier-->
+						<PER05/>
+						<!--Communication Number-->
+						<PER06 xsi:nil="true"/>
+						<!--Communication Number Qualifier-->
+						<PER07><!--Telemail-->TM</PER07>
+						<!--Communication Number-->
+						<PER08>Texas</PER08>
+						<!--Contact Inquiry Reference-->
+						<PER09>USA</PER09>
+					</PER>
+				</N1Loop1>
+				<N1Loop1 type="Loop">
+					<!--Party Identification-->
+					<N1 type="Segment">
+						<!--Entity Identifier Code-->
+						<N101><!--Carrier-->CA</N101>
+						<!--Name-->
+						<N102>APEX LOGISTICS</N102>
+					</N1>
+					<!--Party Location-->
+					<N3 type="Segment">
+						<!--Address Information-->
+						<N301>17511 S. SUSANA ROAD</N301>
+						<!--Address Information-->
+						<N302>CA</N302>
+					</N3>
+					<!--Geographic Location-->
+					<N4 type="Segment">
+						<!--City Name-->
+						<N401>COMPTON</N401>
+						<!--State or Province Code-->
+						<N402 xsi:nil="true"/>
+						<!--Postal Code-->
+						<N403>90221-540</N403>
+						<!--Country Code-->
+						<N404>US</N404>
+						<!--Location Qualifier-->
+						<N405><!--District-->34</N405>
+						<!--Location Identifier-->
+						<N406>LOS ANGELES</N406>
+					</N4>
+					<!--Administrative Communications Contact-->
+					<PER type="Segment">
+						<!--Contact Function Code-->
+						<PER01><!--Receiving Contact-->RE</PER01>
+						<!--Name-->
+						<PER02 xsi:nil="true"/>
+						<!--Communication Number Qualifier-->
+						<PER03/>
+						<!--Communication Number-->
+						<PER04 xsi:nil="true"/>
+						<!--Communication Number Qualifier-->
+						<PER05/>
+						<!--Communication Number-->
+						<PER06 xsi:nil="true"/>
+						<!--Communication Number Qualifier-->
+						<PER07><!--Telemail-->TM</PER07>
+						<!--Communication Number-->
+						<PER08>California</PER08>
+						<!--Contact Inquiry Reference-->
+						<PER09>USA</PER09>
+					</PER>
+				</N1Loop1>
+				<N1Loop1 type="Loop">
+					<!--Party Identification-->
+					<N1 type="Segment">
+						<!--Entity Identifier Code-->
+						<N101><!--Importer-->IM</N101>
+						<!--Name-->
+						<N102>Apple Inc</N102>
+					</N1>
+					<!--Geographic Location-->
+					<N4 type="Segment">
+						<!--City Name-->
+						<N401>ELK GROVE</N401>
+						<!--State or Province Code-->
+						<N402 xsi:nil="true"/>
+						<!--Postal Code-->
+						<N403>95758</N403>
+						<!--Country Code-->
+						<N404>US</N404>
+					</N4>
+					<!--Administrative Communications Contact-->
+					<PER type="Segment">
+						<!--Contact Function Code-->
+						<PER01><!--Receiving Contact-->RE</PER01>
+						<!--Name-->
+						<PER02 xsi:nil="true"/>
+						<!--Communication Number Qualifier-->
+						<PER03/>
+						<!--Communication Number-->
+						<PER04 xsi:nil="true"/>
+						<!--Communication Number Qualifier-->
+						<PER05/>
+						<!--Communication Number-->
+						<PER06 xsi:nil="true"/>
+						<!--Communication Number Qualifier-->
+						<PER07><!--Telemail-->TM</PER07>
+						<!--Communication Number-->
+						<PER08>California</PER08>
+						<!--Contact Inquiry Reference-->
+						<PER09>USA</PER09>
+					</PER>
+				</N1Loop1>
+				<!--Terms of Sale/Deferred Terms of Sale-->
+				<ITD type="Segment">
+					<!--Terms Type Code-->
+					<ITD01><!--Mutually Defined-->ZZ</ITD01>
+					<!--Terms Basis Date Code-->
+					<ITD02/>
+					<!--Terms Discount Percent-->
+					<ITD03 xsi:nil="true"/>
+					<!--Terms Discount Due Date-->
+					<ITD04 xsi:nil="true"/>
+					<!--Terms Discount Days Due-->
+					<ITD05 xsi:nil="true"/>
+					<!--Terms Net Due Date-->
+					<ITD06 xsi:nil="true"/>
+					<!--Terms Net Days-->
+					<ITD07 xsi:nil="true"/>
+					<!--Terms Discount Amount-->
+					<ITD08 xsi:nil="true"/>
+					<!--Terms Deferred Due Date-->
+					<ITD09 xsi:nil="true"/>
+					<!--Deferred Amount Due-->
+					<ITD10 xsi:nil="true"/>
+					<!--Percent of Invoice Payable-->
+					<ITD11 xsi:nil="true"/>
+					<!--Description-->
+					<ITD12>FCAShanghai China mainland</ITD12>
+				</ITD>
+				<!--Terms of Sale/Deferred Terms of Sale-->
+				<ITD type="Segment">
+					<!--Terms Type Code-->
+					<ITD01><!--Promissory Notes-->63</ITD01>
+					<!--Terms Basis Date Code-->
+					<ITD02/>
+					<!--Terms Discount Percent-->
+					<ITD03 xsi:nil="true"/>
+					<!--Terms Discount Due Date-->
+					<ITD04 xsi:nil="true"/>
+					<!--Terms Discount Days Due-->
+					<ITD05 xsi:nil="true"/>
+					<!--Terms Net Due Date-->
+					<ITD06 xsi:nil="true"/>
+					<!--Terms Net Days-->
+					<ITD07 xsi:nil="true"/>
+					<!--Terms Discount Amount-->
+					<ITD08 xsi:nil="true"/>
+					<!--Terms Deferred Due Date-->
+					<ITD09 xsi:nil="true"/>
+					<!--Deferred Amount Due-->
+					<ITD10 xsi:nil="true"/>
+					<!--Percent of Invoice Payable-->
+					<ITD11 xsi:nil="true"/>
+					<!--Description-->
+					<ITD12>NET 45 DAYS</ITD12>
+				</ITD>
+				<!--Measurements-->
+				<MEA type="Segment">
+					<!--Measurement Reference ID Code-->
+					<MEA01><!--Weights-->WT</MEA01>
+					<!--Measurement Qualifier-->
+					<MEA02><!--Gross Weight-->G</MEA02>
+					<!--Measurement Value-->
+					<MEA03>375.20</MEA03>
+					<!--Composite Unit of Measure-->
+					<MEA04 type="Composite">
+						<!--Unit or Basis for Measurement Code-->
+						<MEA0401><!--Kilogram-->KG</MEA0401>
+					</MEA04>
+				</MEA>
+				<!--Measurements-->
+				<MEA type="Segment">
+					<!--Measurement Reference ID Code-->
+					<MEA01><!--Package Limitations-->PL</MEA01>
+					<!--Measurement Qualifier-->
+					<MEA02/>
+					<!--Measurement Value-->
+					<MEA03>0000000037</MEA03>
+					<!--Composite Unit of Measure-->
+					<MEA04 type="Composite">
+						<!--Unit or Basis for Measurement Code-->
+						<MEA0401><!--Carton-->CT</MEA0401>
+					</MEA04>
+				</MEA>
+				<!--Measurements-->
+				<MEA type="Segment">
+					<!--Measurement Reference ID Code-->
+					<MEA01><!--Package Limitations-->PL</MEA01>
+					<!--Measurement Qualifier-->
+					<MEA02/>
+					<!--Measurement Value-->
+					<MEA03>0000000001</MEA03>
+					<!--Composite Unit of Measure-->
+					<MEA04 type="Composite">
+						<!--Unit or Basis for Measurement Code-->
+						<MEA0401><!--Pallet/Unit Load-->PL</MEA0401>
+					</MEA04>
+				</MEA>
+				<IT1Loop1 type="Loop">
+					<!--Baseline Item Data (Invoice)-->
+					<IT1 type="Segment">
+						<!--Assigned Identification-->
+						<IT101>1</IT101>
+						<!--Quantity Invoiced-->
+						<IT102>185</IT102>
+						<!--Unit or Basis for Measurement Code-->
+						<IT103><!--Each-->EA</IT103>
+						<!--Unit Price-->
+						<IT104>625.01</IT104>
+						<!--Basis of Unit Price Code-->
+						<IT105/>
+						<!--Product/Service ID Qualifier-->
+						<IT106><!--Vendor&apos;s (Seller&apos;s) Part Number-->VP</IT106>
+						<!--Product/Service ID-->
+						<IT107>MGNG3LL/A</IT107>
+						<!--Product/Service ID Qualifier-->
+						<IT108><!--Model Number-->MN</IT108>
+						<!--Product/Service ID-->
+						<IT109>A2337</IT109>
+						<!--Product/Service ID Qualifier-->
+						<IT110/>
+						<!--Product/Service ID-->
+						<IT111 xsi:nil="true"/>
+						<!--Product/Service ID Qualifier-->
+						<IT112/>
+						<!--Product/Service ID-->
+						<IT113 xsi:nil="true"/>
+						<!--Product/Service ID Qualifier-->
+						<IT114><!--International Harmonized Commodity Code-->HD</IT114>
+						<!--Product/Service ID-->
+						<IT115>8471300100</IT115>
+					</IT1>
+					<!--Measurements-->
+					<MEA type="Segment">
+						<!--Measurement Reference ID Code-->
+						<MEA01><!--Weights-->WT</MEA01>
+						<!--Measurement Qualifier-->
+						<MEA02><!--Actual Net Weight-->N</MEA02>
+						<!--Measurement Value-->
+						<MEA03>347.30</MEA03>
+						<!--Composite Unit of Measure-->
+						<MEA04 type="Composite">
+							<!--Unit or Basis for Measurement Code-->
+							<MEA0401><!--Kilogram-->KG</MEA0401>
+						</MEA04>
+					</MEA>
+					<PIDLoop1 type="Loop">
+						<!--Product/Item Description-->
+						<PID type="Segment">
+							<!--Item Description Type Code-->
+							<PID01><!--Free-form-->F</PID01>
+							<!--Product/Process Characteristic Code-->
+							<PID02/>
+							<!--Agency Qualifier Code-->
+							<PID03/>
+							<!--Product Description Code-->
+							<PID04 xsi:nil="true"/>
+							<!--Description-->
+							<PID05>MBA 5-PK 13.3 SPG/7C GPU/8GB/256GB-USA</PID05>
+						</PID>
+					</PIDLoop1>
+					<!--Reference Information-->
+					<REF type="Segment">
+						<!--Reference Identification Qualifier-->
+						<REF01><!--Shipment Origin Code-->4B</REF01>
+						<!--Reference Identification-->
+						<REF02>CN</REF02>
+					</REF>
+					<SACLoop1 type="Loop">
+						<!--Service, Promotion, Allowance, or Charge Information-->
+						<SAC type="Segment">
+							<!--Allowance or Charge Indicator Code-->
+							<SAC01><!--Service-->S</SAC01>
+							<!--Service, Promotion, Allowance, or Charge Code-->
+							<SAC02><!--Total Invoice Amount-->I132</SAC02>
+							<!--Agency Qualifier Code-->
+							<SAC03/>
+							<!--Agency Service, Promotion, Allowance, or Charge Code-->
+							<SAC04 xsi:nil="true"/>
+							<!--Amount-->
+							<SAC05>11562685</SAC05>
+						</SAC>
+					</SACLoop1>
+					<SLNLoop1 type="Loop">
+						<!--Subline Item Detail-->
+						<SLN type="Segment">
+							<!--Assigned Identification-->
+							<SLN01>MGNG3LL/A</SLN01>
+							<!--Assigned Identification-->
+							<SLN02 xsi:nil="true"/>
+							<!--Relationship Code-->
+							<SLN03><!--Substituted-->S</SLN03>
+						</SLN>
+						<!--Reference Information-->
+						<REF type="Segment">
+							<!--Reference Identification Qualifier-->
+							<REF01><!--Delivery Order Number-->DO</REF01>
+							<!--Reference Identification-->
+							<REF02>3944697355</REF02>
+							<!--Description-->
+							<REF03>000010</REF03>
+							<!--Reference Identifier-->
+							<REF04 type="Composite">
+								<!--Reference Identification Qualifier-->
+								<REF0401><!--Medical Record Identification Number-->EA</REF0401>
+								<!--Reference Identification-->
+								<REF0402>70</REF0402>
+							</REF04>
+						</REF>
+						<!--Reference Information-->
+						<REF type="Segment">
+							<!--Reference Identification Qualifier-->
+							<REF01><!--Delivery Order Number-->DO</REF01>
+							<!--Reference Identification-->
+							<REF02>3944827731</REF02>
+							<!--Description-->
+							<REF03>000010</REF03>
+							<!--Reference Identifier-->
+							<REF04 type="Composite">
+								<!--Reference Identification Qualifier-->
+								<REF0401><!--Medical Record Identification Number-->EA</REF0401>
+								<!--Reference Identification-->
+								<REF0402>115</REF0402>
+							</REF04>
+						</REF>
+					</SLNLoop1>
+				</IT1Loop1>
+				<!--Total Monetary Value Summary-->
+				<TDS type="Segment">
+					<!--Amount-->
+					<TDS01>11562685</TDS01>
+				</TDS>
+				<!--Transaction Totals-->
+				<CTT type="Segment">
+					<!--Number of Line Items-->
+					<CTT01>1</CTT01>
+				</CTT>
+			</TX-00701-810>
+		</TransactionSet>
+	</FunctionalGroup>
+</Interchange>

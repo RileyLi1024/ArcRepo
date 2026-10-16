@@ -1,0 +1,36 @@
+﻿     <!-- NOTE: Do not edit rsb:info -->
+<rsb:info title="After Send"     desc="This event is fired after sending a file.">
+  <input name="PortId"           desc="The id of the port that sent file." />
+  <input name="Direction"        desc="The direction of transaction." />
+  <input name="Filename"         desc="The name of the file that was sent." />
+  <input name="FilePath"         desc="The path of the file after sending." />
+  <input name="Attachment#"      desc="The path of the attachment after sending." />
+  <input name="MessageId"        desc="The Id of the send message containing the file." />
+  <input name="ErrorMessage"     desc="If an error occurred, this will contain the error message." />
+  <input name="FinalAttempt"     desc="If true, the number of transfer attempts is equal to or greater than the configured maximum number of send attempts for this port. This file will not be sent again unless it is sent manually." />
+</rsb:info>
+
+
+<!-- Code goes here 
+<rsb:equals attr="ErrorMessage" value="">
+	<rsb:call op="portGetMessageInfo" in="_input" out="out">
+    <rsb:equals attr="out.name" value="id">
+      <rsb:set attr="asn.id" value="[out.value | def]" />
+    </rsb:equals>
+    <rsb:equals attr="out.name" value="status">
+      <rsb:set attr="asn.status" value="[out.value | def]" />
+    </rsb:equals>
+  </rsb:call>
+    <rsb:set attr="file.data">
+      <bba_aviexp_info>
+        <status>3</status>
+        <id>[asn.id | xmlencode]</id>
+        <selectdate>[_ | now | todate("yy-MM-dd HH:mm:ss")]</selectdate>
+      </bba_aviexp_info>
+    </rsb:set>
+<rsb:set attr="portIn.portId" value="BBA_Database" />
+  <rsb:call op="portGetPorts" in="portIn" out="portOut">
+      <rsb:set attr="file.file" value="[portOut.sendfolder | pathcombine('update_[asn.id]_3.xml')]" />
+   </rsb:call>
+   <rsb:call op="fileWrite" in="file"/>
+</rsb:equals>-->

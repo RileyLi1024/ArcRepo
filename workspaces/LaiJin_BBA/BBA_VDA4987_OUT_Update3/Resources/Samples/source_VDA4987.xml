@@ -1,0 +1,517 @@
+<!--
+NOTE: The following attributes can be included in the table XML:
+selectQuery="SELECT * FROM XXX" - This can be used to specify a custom query to execute for this mapping.
+skipProcessedRows="true" - When true, the application will only process rows one time.
+-->
+
+<Items>
+    <std_desadv_header table="`std_desadv_header`" selectQuery="SELECT * FROM `std_desadv_header` WHERE `status` = 0">
+        <id type="long" key="true" />
+        <asn_number />
+        <asn_status type="int" />
+        <create_datetime type="datetime" />
+        <doc_date type="datetime" />
+        <doc_name />
+        <plant_code />
+        <shipment_gross_weight />
+        <shipment_handlingunits_number />
+        <shipment_handlingunits_unit />
+        <shipment_net_weight />
+        <shipment_tare_weight />
+        <shipment_volume />
+        <shipment_volume_unit />
+        <status type="int" updateValue="1" />
+        <std_desadv_dn_header table="`std_desadv_dn_header`" selectQuery="SELECT * FROM `std_desadv_dn_header` WHERE `asn_header_id` = ${id}">
+            <id type="long" key="true" />
+            <alternate_fields01 />
+            <alternate_fields02 />
+            <alternate_fields03 />
+            <alternate_fields04 />
+            <alternate_fields05 />
+            <alternate_fields06 />
+            <alternate_fields07 />
+            <alternate_fields08 />
+            <alternate_fields09 />
+            <alternate_fields10 />
+            <asn_header_id />
+            <asn_incoterms />
+            <asn_number />
+            <buyer_city />
+            <buyer_code />
+            <buyer_contact_email />
+            <buyer_contact_fax />
+            <buyer_contact_person_code />
+            <buyer_contact_person_name />
+            <buyer_contact_telephone />
+            <buyer_contact_telephone2 />
+            <buyer_country />
+            <buyer_name />
+            <buyer_name_add />
+            <buyer_postal />
+            <buyer_state />
+            <buyer_street />
+            <buyer_street_add />
+            <consignment_height />
+            <consignment_height_unit />
+            <consignment_length />
+            <consignment_length_unit />
+            <consignment_net_volume />
+            <consignment_net_volume_unit />
+            <consignment_width />
+            <consignment_width_unit />
+            <container_code />
+            <delivery_incoterms_place />
+            <delivery_incoterms_place_name />
+            <delivery_note_number />
+            <departure_transport_carrier />
+            <departure_transport_mode />
+            <departure_transport_number />
+            <despatch_date type="datetime" />
+            <discharge_place />
+            <discharge_place_name />
+            <doc_any type="datetime" />
+            <doc_date type="datetime" />
+            <doc_name />
+            <equipment_desc />
+            <equipment_type />
+            <estimated_arrival_date type="datetime" />
+            <freight_forwarder_code />
+            <freight_forwarder_country />
+            <freight_forwarder_name />
+            <freight_forwarder_name_add />
+            <freight_forwarder_postal />
+            <freight_forwarder_street />
+            <freight_forwarder_street_add />
+            <freigt_forwarder_city />
+            <freigt_forwarder_state />
+            <incoterms />
+            <loading_place />
+            <loading_place_name />
+            <main_transport_carrier />
+            <main_transport_mode />
+            <main_transport_number />
+            <plant_code />
+            <plant_number />
+            <request_delivery_date type="datetime" />
+            <seal_number />
+            <seller_city />
+            <seller_code />
+            <seller_contact_email />
+            <seller_contact_fax />
+            <seller_contact_person_code />
+            <seller_contact_person_name />
+            <seller_contact_telephone />
+            <seller_contact_telephone2 />
+            <seller_country />
+            <seller_name />
+            <seller_name_add />
+            <seller_postal />
+            <seller_state />
+            <seller_street />
+            <seller_street_add />
+            <service_code />
+            <service_desc />
+            <shipfrom_city />
+            <shipfrom_code />
+            <shipfrom_country />
+            <shipfrom_name />
+            <shipfrom_name_add />
+            <shipfrom_postal />
+            <shipfrom_state />
+            <shipfrom_street />
+            <shipfrom_street_add />
+            <shipment_gross_weight />
+            <shipment_handlingunits_number />
+            <shipment_handlingunits_unit />
+            <shipment_net_weight />
+            <shipment_number />
+            <shipment_tare_weight />
+            <shipment_volume />
+            <shipment_volume_unit />
+            <shipto_city />
+            <shipto_code />
+            <shipto_contact_email />
+            <shipto_contact_fax />
+            <shipto_contact_person_code />
+            <shipto_contact_person_name />
+            <shipto_contact_telephone />
+            <shipto_contact_telephone2 />
+            <shipto_country />
+            <shipto_name />
+            <shipto_name_add />
+            <shipto_postal />
+            <shipto_state />
+            <shipto_street />
+            <shipto_street_add />
+            <transport_number />
+            <truck_license_number />
+            <warehouse_name />
+            <warehouse_number />
+            <waybill_number />
+            <std_desadv_outer table="`std_desadv_outer`" selectQuery="SELECT * FROM `std_desadv_outer` WHERE `header_id` = ${id}">
+                <id type="long" key="true" />
+                <alternate_fields01 />
+                <alternate_fields02 />
+                <alternate_fields03 />
+                <alternate_fields04 />
+                <alternate_fields05 />
+                <alternate_fields06 />
+                <alternate_fields07 />
+                <alternate_fields08 />
+                <alternate_fields09 />
+                <alternate_fields10 />
+                <batch_number />
+                <header_id type="long" />
+                <inner_qty_of_outer />
+                <inner_qty_of_outer_unit />
+                <kanban_number />
+                <label_type />
+                <outer_aid_package_code />
+                <outer_aid_package_qty />
+                <outer_aid_package_type />
+                <outer_cover_package_code />
+                <outer_cover_package_qty />
+                <outer_cover_package_type />
+                <outer_glt_package_code />
+                <outer_glt_package_qty />
+                <outer_glt_package_type />
+                <outer_package_code />
+                <outer_package_number />
+                <outer_package_qty />
+                <outer_package_type />
+                <outer_packaging_desc />
+                <outer_packaging_gross_weight />
+                <outer_packaging_height />
+                <outer_packaging_length />
+                <outer_packaging_net_weight />
+                <outer_packaging_volme />
+                <outer_packaging_volme_unit />
+                <outer_packaging_width />
+                <packing_case />
+                <production_date type="datetime" />
+                <serial_number />
+                <total_inner_qty />
+                <std_desadv_outer_package table="`std_desadv_outer_package`" selectQuery="SELECT * FROM `std_desadv_outer_package` WHERE `outer_id` = ${id}">
+                    <id type="long" key="true" />
+                    <alternate_fields01 />
+                    <alternate_fields02 />
+                    <alternate_fields03 />
+                    <alternate_fields04 />
+                    <alternate_fields05 />
+                    <alternate_fields06 />
+                    <alternate_fields07 />
+                    <alternate_fields08 />
+                    <alternate_fields09 />
+                    <alternate_fields10 />
+                    <desadv_inner />
+                    <outer_id type="long" />
+                    <outer_package_code />
+                    <outer_package_number />
+                </std_desadv_outer_package>
+                <std_desadv_mediate table="`std_desadv_mediate`" selectQuery="SELECT * FROM `std_desadv_mediate` WHERE `outer_id` = ${id}">
+                    <id type="long" key="true" />
+                    <alternate_fields01 />
+                    <alternate_fields02 />
+                    <alternate_fields03 />
+                    <alternate_fields04 />
+                    <alternate_fields05 />
+                    <alternate_fields06 />
+                    <alternate_fields07 />
+                    <alternate_fields08 />
+                    <alternate_fields09 />
+                    <alternate_fields10 />
+                    <batch_number />
+                    <expiry_date type="datetime" />
+                    <intermediate_package_code />
+                    <intermediate_package_qty />
+                    <intermediate_package_type />
+                    <intermediate_packaging_desc />
+                    <intermediate_packaging_gross_weight />
+                    <intermediate_packaging_height />
+                    <intermediate_packaging_length />
+                    <intermediate_packaging_net_weight />
+                    <intermediate_packaging_tare_weight />
+                    <intermediate_packaging_volume />
+                    <intermediate_packaging_volume_unit />
+                    <intermediate_packaging_width />
+                    <intermediate_per_package_qty />
+                    <kanban_number />
+                    <label_type />
+                    <outer_id type="long" />
+                    <outer_package_number />
+                    <product_best_before_date type="datetime" />
+                    <production_date type="datetime" />
+                    <std_desadv_mediate_package table="`std_desadv_mediate_package`" selectQuery="SELECT * FROM `std_desadv_mediate_package` WHERE `mediate_id` = ${id}">
+                        <id type="long" key="true" />
+                        <alternate_fields01 />
+                        <alternate_fields02 />
+                        <alternate_fields03 />
+                        <alternate_fields04 />
+                        <alternate_fields05 />
+                        <alternate_fields06 />
+                        <alternate_fields07 />
+                        <alternate_fields08 />
+                        <alternate_fields09 />
+                        <alternate_fields10 />
+                        <inner_package_number />
+                        <intermediate_package_code />
+                        <intermediate_package_number />
+                        <mediate_id type="long" />
+                    </std_desadv_mediate_package>
+                    <std_desadv_inner table="`std_desadv_inner`" selectQuery="SELECT * FROM `std_desadv_inner` WHERE `mediate_id` = ${id}">
+                        <id type="long" key="true" />
+                        <alternate_fields01 />
+                        <alternate_fields02 />
+                        <alternate_fields03 />
+                        <alternate_fields04 />
+                        <alternate_fields05 />
+                        <alternate_fields06 />
+                        <alternate_fields07 />
+                        <alternate_fields08 />
+                        <alternate_fields09 />
+                        <alternate_fields10 />
+                        <batch_number />
+                        <inner_aid_package_code />
+                        <inner_aid_package_qty />
+                        <inner_aid_package_type />
+                        <inner_mid_package_code />
+                        <inner_mid_package_qty />
+                        <inner_mid_package_type />
+                        <inner_package_code />
+                        <inner_package_qty />
+                        <inner_package_type />
+                        <inner_packaging_desc />
+                        <inner_packaging_gross_weight />
+                        <inner_packaging_height />
+                        <inner_packaging_length />
+                        <inner_packaging_net_weight />
+                        <inner_packaging_tare_weight type="double" />
+                        <inner_packaging_volume />
+                        <inner_packaging_volume_unit />
+                        <inner_packaging_width />
+                        <inner_per_package_qty />
+                        <intermediate_package_number />
+                        <kanban_number />
+                        <label_type />
+                        <mediate_id type="long" />
+                        <outer_id type="long" />
+                        <outer_package_number />
+                        <production_date type="datetime" />
+                        <std_desadv_inner_package table="`std_desadv_inner_package`" selectQuery="SELECT * FROM `std_desadv_inner_package` WHERE `inner_id` = ${id}">
+                            <id type="long" key="true" />
+                            <alternate_fields01 />
+                            <alternate_fields02 />
+                            <alternate_fields03 />
+                            <alternate_fields04 />
+                            <alternate_fields05 />
+                            <alternate_fields06 />
+                            <alternate_fields07 />
+                            <alternate_fields08 />
+                            <alternate_fields09 />
+                            <alternate_fields10 />
+                            <inner_aid_package_qty />
+                            <inner_id type="long" />
+                            <inner_package_code />
+                            <inner_package_number />
+                        </std_desadv_inner_package>
+                        <std_desadv_line table="`std_desadv_line`" selectQuery="SELECT * FROM `std_desadv_line` WHERE `inner_id` = ${id}">
+                            <id type="long" key="true" />
+                            <alternate_fields01 />
+                            <alternate_fields02 />
+                            <alternate_fields03 />
+                            <alternate_fields04 />
+                            <alternate_fields05 />
+                            <alternate_fields06 />
+                            <alternate_fields07 />
+                            <alternate_fields08 />
+                            <alternate_fields09 />
+                            <alternate_fields10 />
+                            <buyer_item_number />
+                            <consumption_point />
+                            <consumption_point_name />
+                            <contact_person_code />
+                            <contact_person_name />
+                            <dangerous_goods_code />
+                            <delivery_date type="datetime" />
+                            <delivery_note_number />
+                            <delivery_note_position_number />
+                            <despatch_qty />
+                            <duty_regime_type_code />
+                            <free_text />
+                            <harmonised_system_number />
+                            <inner_id type="long" />
+                            <inner_package_number />
+                            <inner_package_qty />
+                            <item_description />
+                            <item_description_add />
+                            <item_description_language_code />
+                            <item_status />
+                            <nael_number />
+                            <order_item_number />
+                            <order_number />
+                            <origin_country />
+                            <outer_id type="long" />
+                            <release_creation_date type="datetime" />
+                            <release_line_number />
+                            <release_number />
+                            <serial_number />
+                            <split_qty />
+                            <split_qty_unit />
+                            <supplier_item_number />
+                            <warehouse_number />
+                        </std_desadv_line>
+                    </std_desadv_inner>
+                </std_desadv_mediate>
+                <std_desadv_inner table="`std_desadv_inner`" selectQuery="SELECT * FROM `std_desadv_inner` WHERE `outer_id` = ${id} AND `mediate_id` IS NULL">
+                    <id type="long" key="true" />
+                    <alternate_fields01 />
+                    <alternate_fields02 />
+                    <alternate_fields03 />
+                    <alternate_fields04 />
+                    <alternate_fields05 />
+                    <alternate_fields06 />
+                    <alternate_fields07 />
+                    <alternate_fields08 />
+                    <alternate_fields09 />
+                    <alternate_fields10 />
+                    <batch_number />
+                    <inner_aid_package_code />
+                    <inner_aid_package_qty />
+                    <inner_aid_package_type />
+                    <inner_mid_package_code />
+                    <inner_mid_package_qty />
+                    <inner_mid_package_type />
+                    <inner_package_code />
+                    <inner_package_qty />
+                    <inner_package_type />
+                    <inner_packaging_desc />
+                    <inner_packaging_gross_weight />
+                    <inner_packaging_height />
+                    <inner_packaging_length />
+                    <inner_packaging_net_weight />
+                    <inner_packaging_tare_weight type="double" />
+                    <inner_packaging_volume />
+                    <inner_packaging_volume_unit />
+                    <inner_packaging_width />
+                    <inner_per_package_qty />
+                    <intermediate_package_number />
+                    <kanban_number />
+                    <label_type />
+                    <mediate_id type="long" />
+                    <outer_id type="long" />
+                    <outer_package_number />
+                    <production_date type="datetime" />
+                    <std_desadv_inner_package table="`std_desadv_inner_package`" selectQuery="SELECT * FROM `std_desadv_inner_package` WHERE `inner_id` = ${id}">
+                        <id type="long" key="true" />
+                        <alternate_fields01 />
+                        <alternate_fields02 />
+                        <alternate_fields03 />
+                        <alternate_fields04 />
+                        <alternate_fields05 />
+                        <alternate_fields06 />
+                        <alternate_fields07 />
+                        <alternate_fields08 />
+                        <alternate_fields09 />
+                        <alternate_fields10 />
+                        <inner_aid_package_qty />
+                        <inner_id type="long" />
+                        <inner_package_code />
+                        <inner_package_number />
+                    </std_desadv_inner_package>
+                    <std_desadv_line table="`std_desadv_line`" selectQuery="SELECT * FROM `std_desadv_line` WHERE `inner_id` = ${id} AND `outer_id` = ${outer_id}">
+                        <id type="long" key="true" />
+                        <alternate_fields01 />
+                        <alternate_fields02 />
+                        <alternate_fields03 />
+                        <alternate_fields04 />
+                        <alternate_fields05 />
+                        <alternate_fields06 />
+                        <alternate_fields07 />
+                        <alternate_fields08 />
+                        <alternate_fields09 />
+                        <alternate_fields10 />
+                        <buyer_item_number />
+                        <consumption_point />
+                        <consumption_point_name />
+                        <contact_person_code />
+                        <contact_person_name />
+                        <dangerous_goods_code />
+                        <delivery_date type="datetime" />
+                        <delivery_note_number />
+                        <delivery_note_position_number />
+                        <despatch_qty />
+                        <duty_regime_type_code />
+                        <free_text />
+                        <harmonised_system_number />
+                        <inner_id type="long" />
+                        <inner_package_number />
+                        <inner_package_qty />
+                        <item_description />
+                        <item_description_add />
+                        <item_description_language_code />
+                        <item_status />
+                        <nael_number />
+                        <order_item_number />
+                        <order_number />
+                        <origin_country />
+                        <outer_id type="long" />
+                        <release_creation_date type="datetime" />
+                        <release_line_number />
+                        <release_number />
+                        <serial_number />
+                        <split_qty />
+                        <split_qty_unit />
+                        <supplier_item_number />
+                        <warehouse_number />
+                    </std_desadv_line>
+                </std_desadv_inner>
+                <std_desadv_line table="`std_desadv_line`" selectQuery="SELECT * FROM `std_desadv_line` WHERE `outer_id` = ${id} AND `inner_id` IS NULL">
+                    <id type="long" key="true" />
+                    <alternate_fields01 />
+                    <alternate_fields02 />
+                    <alternate_fields03 />
+                    <alternate_fields04 />
+                    <alternate_fields05 />
+                    <alternate_fields06 />
+                    <alternate_fields07 />
+                    <alternate_fields08 />
+                    <alternate_fields09 />
+                    <alternate_fields10 />
+                    <buyer_item_number />
+                    <consumption_point />
+                    <consumption_point_name />
+                    <contact_person_code />
+                    <contact_person_name />
+                    <dangerous_goods_code />
+                    <delivery_date type="datetime" />
+                    <delivery_note_number />
+                    <delivery_note_position_number />
+                    <despatch_qty />
+                    <duty_regime_type_code />
+                    <free_text />
+                    <harmonised_system_number />
+                    <inner_id type="long" />
+                    <inner_package_number />
+                    <inner_package_qty />
+                    <item_description />
+                    <item_description_add />
+                    <item_description_language_code />
+                    <item_status />
+                    <nael_number />
+                    <order_item_number />
+                    <order_number />
+                    <origin_country />
+                    <outer_id type="long" />
+                    <release_creation_date type="datetime" />
+                    <release_line_number />
+                    <release_number />
+                    <serial_number />
+                    <split_qty />
+                    <split_qty_unit />
+                    <supplier_item_number />
+                    <warehouse_number />
+                </std_desadv_line>
+            </std_desadv_outer>
+        </std_desadv_dn_header>
+    </std_desadv_header>
+</Items>

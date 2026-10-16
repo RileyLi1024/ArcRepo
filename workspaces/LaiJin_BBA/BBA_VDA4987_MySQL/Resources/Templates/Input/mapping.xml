@@ -1,0 +1,7 @@
+<Items>
+    <std_desadv_header table="`std_desadv_header`" action="upsert">
+        <id type="long" key="true" ref="@@LAST_INSERT_ID" />
+        <create_datetime type="datetime" />
+        <status type="int" />
+    </std_desadv_header>
+</Items>
