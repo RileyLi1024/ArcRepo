@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Arc>
+<RunAsService>false</RunAsService>
+<MaxConnections>25</MaxConnections>
+<UsePlain>true</UsePlain>
+<PlainPort>8001</PlainPort>
+<UseSSL>true</UseSSL>
+<SSLPort>8401</SSLPort>
+<SSLCertStore>My</SSLCertStore>
+<SSLCertSubject>CN=test, O=test</SSLCertSubject>
+<SSLCertPassword></SSLCertPassword>
+<sslcertthumbprint></sslcertthumbprint>
+<EnableSSHGatway>false</EnableSSHGatway>
+<SSHHost></SSHHost>
+<SSHPort>22</SSHPort>
+<SSHAuthMode>Password</SSHAuthMode>
+<SSHUser></SSHUser>
+<SSHPassword></SSHPassword>
+<SSHServerFingerprint></SSHServerFingerprint>
+<SSHRemotePort>8401</SSHRemotePort>
+<LogMode>Info</LogMode>
+<AllowLogFile>true</AllowLogFile>
+<LogFile>CData.Arc.log</LogFile>
+<RotateLog>true</RotateLog>
+<RotateLogDays>30</RotateLogDays>
+<DeleteLog>true</DeleteLog>
+<DeleteLogDays>90</DeleteLogDays>
+</Arc>

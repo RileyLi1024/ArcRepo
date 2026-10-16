@@ -1,0 +1,1450 @@
+<Interchange Delimiters=":+.?*'" xmlns="http://www.rssbus.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Meta>
+		<!--SYNTAX IDENTIFIER-->
+		<UNB1 type="Composite">
+			<!--Syntax identifier-->
+			<UNB1.1>
+				<!--UN/ECE level C-->UNOC</UNB1.1>
+			<!--Syntax version number-->
+			<UNB1.2>
+				<!--Version 3-->3</UNB1.2>
+		</UNB1>
+		<!--INTERCHANGE SENDER-->
+		<UNB2 type="Composite">
+			<!--Interchange sender identification-->
+			<UNB2.1>O0013000045BMW-AG</UNB2.1>
+		</UNB2>
+		<!--INTERCHANGE RECIPIENT-->
+		<UNB3 type="Composite">
+			<!--Interchange recipient identification-->
+			<UNB3.1>12345678</UNB3.1>
+		</UNB3>
+		<!--DATE AND TIME OF PREPARATION-->
+		<UNB4 type="Composite">
+			<!--Date-->
+			<UNB4.1>191112</UNB4.1>
+			<!--Time-->
+			<UNB4.2>0240</UNB4.2>
+		</UNB4>
+		<!--Interchange control reference-->
+		<UNB5>000000847</UNB5>
+	</Meta>
+	<TransactionSet>
+		<TX-D04A-DELFOR type="TransactionSet">
+			<Meta>
+				<!--MESSAGE REFERENCE NUMBER-->
+				<_0062>1</_0062>
+				<!--MESSAGE IDENTIFIER-->
+				<S009 type="Composite">
+					<!--Message type-->
+					<_0065>
+						<!--Delivery schedule message-->DELFOR</_0065>
+					<!--Message version number-->
+					<_0052>
+						<!--Draft version/UN/EDIFACT Directory-->D</_0052>
+					<!--Message release number-->
+					<_0054>
+						<!--Release 2004 - A-->04A</_0054>
+					<!--Controlling agency, coded-->
+					<_0051>
+						<!--UN/CEFACT-->UN</_0051>
+					<!--Association assigned code-->
+					<_0057>GAVB10</_0057>
+				</S009>
+			</Meta>
+			<!--BEGINNING OF MESSAGE-->
+			<BGM type="Segment">
+				<!--DOCUMENT/MESSAGE NAME-->
+				<C002 type="Composite">
+					<!--Document name code-->
+					<_1001>
+						<!--Delivery schedule-->241</_1001>
+					<!--Code list identification code-->
+					<_1131/>
+					<!--Code list responsible agency code-->
+					<_3055>
+						<!--UN/ECE (United Nations - Economic Commission for Europe)-->6</_3055>
+					<!--Document name-->
+					<_1000>ANY</_1000>
+				</C002>
+				<!--DOCUMENT/MESSAGE IDENTIFICATION-->
+				<C106 type="Composite">
+					<!--Document identifier-->
+					<_1004>000000847</_1004>
+				</C106>
+				<!--MESSAGE FUNCTION CODE-->
+				<_1225>
+					<!--Original-->9</_1225>
+			</BGM>
+			<!--DATE/TIME/PERIOD-->
+			<DTM type="Segment">
+				<!--DATE/TIME/PERIOD-->
+				<C507 type="Composite">
+					<!--Date or time or period function code qualifier-->
+					<_2005>
+						<!--Document/message date/time-->137</_2005>
+					<!--Date or time or period text-->
+					<_2380>20191112</_2380>
+					<!--Date or time or period format code-->
+					<_2379>
+						<!--CCYYMMDD-->102</_2379>
+				</C507>
+			</DTM>
+			<!--DATE/TIME/PERIOD-->
+			<DTM type="Segment">
+				<!--DATE/TIME/PERIOD-->
+				<C507 type="Composite">
+					<!--Date or time or period function code qualifier-->
+					<_2005>
+						<!--Delivery date/time, requested-->2</_2005>
+				</C507>
+			</DTM>
+			<NADLoop1 type="Loop">
+				<!--NAME AND ADDRESS-->
+				<NAD type="Segment">
+					<!--PARTY FUNCTION CODE QUALIFIER-->
+					<_3035>
+						<!--Buyer-->BY</_3035>
+					<!--PARTY IDENTIFICATION DETAILS-->
+					<C082 type="Composite">
+						<!--Party identifier-->
+						<_3039>BMW-AG</_3039>
+						<!--Code list identification code-->
+						<_1131/>
+						<!--Code list responsible agency code-->
+						<_3055>
+							<!--Assigned by buyer or buyer&apos;s agent-->92</_3055>
+					</C082>
+				</NAD>
+			</NADLoop1>
+			<NADLoop1 type="Loop">
+				<!--NAME AND ADDRESS-->
+				<NAD type="Segment">
+					<!--PARTY FUNCTION CODE QUALIFIER-->
+					<_3035>
+						<!--Seller-->SE</_3035>
+					<!--PARTY IDENTIFICATION DETAILS-->
+					<C082 type="Composite">
+						<!--Party identifier-->
+						<_3039>12345678</_3039>
+						<!--Code list identification code-->
+						<_1131/>
+						<!--Code list responsible agency code-->
+						<_3055>
+							<!--Assigned by buyer or buyer&apos;s agent-->92</_3055>
+					</C082>
+					<!--NAME AND ADDRESS-->
+					<C058 type="Composite"/>
+					<!--PARTY NAME-->
+					<C080 type="Composite">
+						<!--Party name-->
+						<_3036>Mustermann AG</_3036>
+					</C080>
+					<!--STREET-->
+					<C059 type="Composite">
+						<!--Street and number or post office box identifier-->
+						<_3042>Teststr. 15</_3042>
+					</C059>
+					<!--CITY NAME-->
+					<_3164>MAINLEUS</_3164>
+					<!--COUNTRY SUB-ENTITY DETAILS-->
+					<C819 type="Composite"/>
+					<!--POSTAL IDENTIFICATION CODE-->
+					<_3251>95336</_3251>
+					<!--COUNTRY NAME CODE-->
+					<_3207>DE</_3207>
+				</NAD>
+			</NADLoop1>
+			<NADLoop1 type="Loop">
+				<!--NAME AND ADDRESS-->
+				<NAD type="Segment">
+					<!--PARTY FUNCTION CODE QUALIFIER-->
+					<_3035>
+						<!--Ship from-->SF</_3035>
+					<!--PARTY IDENTIFICATION DETAILS-->
+					<C082 type="Composite">
+						<!--Party identifier-->
+						<_3039>12345678</_3039>
+						<!--Code list identification code-->
+						<_1131/>
+						<!--Code list responsible agency code-->
+						<_3055>
+							<!--Assigned by buyer or buyer&apos;s agent-->92</_3055>
+					</C082>
+					<!--NAME AND ADDRESS-->
+					<C058 type="Composite"/>
+					<!--PARTY NAME-->
+					<C080 type="Composite">
+						<!--Party name-->
+						<_3036>Mustermann AG</_3036>
+					</C080>
+					<!--STREET-->
+					<C059 type="Composite">
+						<!--Street and number or post office box identifier-->
+						<_3042>Teststr. 15</_3042>
+					</C059>
+					<!--CITY NAME-->
+					<_3164>MAINLEUS</_3164>
+					<!--COUNTRY SUB-ENTITY DETAILS-->
+					<C819 type="Composite"/>
+					<!--POSTAL IDENTIFICATION CODE-->
+					<_3251>95336</_3251>
+					<!--COUNTRY NAME CODE-->
+					<_3207>DE</_3207>
+				</NAD>
+			</NADLoop1>
+			<GEILoop1 type="Loop">
+				<!--PROCESSING INFORMATION-->
+				<GEI type="Segment">
+					<!--PROCESSING INFORMATION CODE QUALIFIER-->
+					<_9649>
+						<!--Scheduling type information-->3</_9649>
+					<!--PROCESSING INDICATOR-->
+					<C012 type="Composite">
+						<!--Processing indicator description code-->
+						<_7365>
+							<!--Complete information-->37</_7365>
+					</C012>
+				</GEI>
+				<NADLoop2 type="Loop">
+					<!--NAME AND ADDRESS-->
+					<NAD type="Segment">
+						<!--PARTY FUNCTION CODE QUALIFIER-->
+						<_3035>
+							<!--Ship to-->ST</_3035>
+						<!--PARTY IDENTIFICATION DETAILS-->
+						<C082 type="Composite">
+							<!--Party identifier-->
+							<_3039>020</_3039>
+							<!--Code list identification code-->
+							<_1131/>
+							<!--Code list responsible agency code-->
+							<_3055>
+								<!--Assigned by buyer or buyer&apos;s agent-->92</_3055>
+						</C082>
+						<!--NAME AND ADDRESS-->
+						<C058 type="Composite"/>
+						<!--PARTY NAME-->
+						<C080 type="Composite">
+							<!--Party name-->
+							<_3036>BMW AG, W. 2.4 Halle 87.4</_3036>
+						</C080>
+						<!--STREET-->
+						<C059 type="Composite">
+							<!--Street and number or post office box identifier-->
+							<_3042>Karl-Dompert-Str. 9</_3042>
+						</C059>
+						<!--CITY NAME-->
+						<_3164>Dingolfing</_3164>
+						<!--COUNTRY SUB-ENTITY DETAILS-->
+						<C819 type="Composite"/>
+						<!--POSTAL IDENTIFICATION CODE-->
+						<_3251>84130</_3251>
+						<!--COUNTRY NAME CODE-->
+						<_3207>DE</_3207>
+					</NAD>
+					<!--PLACE/LOCATION IDENTIFICATION-->
+					<LOC type="Segment">
+						<!--LOCATION FUNCTION CODE QUALIFIER-->
+						<_3227>
+							<!--Place of delivery-->7</_3227>
+						<!--LOCATION IDENTIFICATION-->
+						<C517 type="Composite">
+							<!--Location name code-->
+							<_3225>567</_3225>
+							<!--Code list identification code-->
+							<_1131/>
+							<!--Code list responsible agency code-->
+							<_3055>
+								<!--Assigned by buyer or buyer&apos;s agent-->92</_3055>
+						</C517>
+					</LOC>
+					<!--PLACE/LOCATION IDENTIFICATION-->
+					<LOC type="Segment">
+						<!--LOCATION FUNCTION CODE QUALIFIER-->
+						<_3227>
+							<!--Place/port of discharge-->11</_3227>
+						<!--LOCATION IDENTIFICATION-->
+						<C517 type="Composite">
+							<!--Location name code-->
+							<_3225>24874</_3225>
+							<!--Code list identification code-->
+							<_1131/>
+							<!--Code list responsible agency code-->
+							<_3055>
+								<!--Assigned by buyer or buyer&apos;s agent-->92</_3055>
+						</C517>
+					</LOC>
+					<RFFLoop3 type="Loop">
+						<!--REFERENCE-->
+						<RFF type="Segment">
+							<!--REFERENCE-->
+							<C506 type="Composite">
+								<!--Reference code qualifier-->
+								<_1153>
+									<!--Plant number-->PE</_1153>
+								<!--Reference identifier-->
+								<_1154>A120</_1154>
+							</C506>
+						</RFF>
+					</RFFLoop3>
+				</NADLoop2>
+				<LINLoop1 type="Loop">
+					<!--LINE ITEM-->
+					<LIN type="Segment">
+						<!--LINE ITEM IDENTIFIER-->
+						<_1082/>
+						<!--ACTION REQUEST/NOTIFICATION DESCRIPTION CODE-->
+						<_1229/>
+						<!--ITEM NUMBER IDENTIFICATION-->
+						<C212 type="Composite">
+							<!--Item identifier-->
+							<_7140>7381923-01</_7140>
+							<!--Item type identification code-->
+							<_7143>
+								<!--Buyer&apos;s item number-->IN</_7143>
+						</C212>
+					</LIN>
+					<!--ADDITIONAL PRODUCT ID-->
+					<PIA type="Segment">
+						<!--PRODUCT IDENTIFIER CODE QUALIFIER-->
+						<_4347>
+							<!--Additional identification-->1</_4347>
+						<!--ITEM NUMBER IDENTIFICATION-->
+						<C212 type="Composite">
+							<!--Item identifier-->
+							<_7140>ELA913</_7140>
+							<!--Item type identification code-->
+							<_7143>
+								<!--Drawing revision number-->DR</_7143>
+						</C212>
+					</PIA>
+					<!--ITEM DESCRIPTION-->
+					<IMD type="Segment">
+						<!--DESCRIPTION FORMAT CODE-->
+						<_7077>
+							<!--Free-form-->F</_7077>
+						<!--ITEM CHARACTERISTIC-->
+						<C272 type="Composite"/>
+						<!--ITEM DESCRIPTION-->
+						<C273 type="Composite">
+							<!--Item description code-->
+							<_7009>11</_7009>
+							<!--Code list identification code-->
+							<_1131/>
+							<!--Code list responsible agency code-->
+							<_3055>
+								<!--Joint Automotive Industry agency-->272</_3055>
+							<!--Item description-->
+							<_7008>LI CRASHPAD TUER</_7008>
+							<!--Item description-->
+							<_7008>F</_7008>
+						</C273>
+					</IMD>
+					<!--FREE TEXT-->
+					<FTX type="Segment">
+						<!--TEXT SUBJECT CODE QUALIFIER-->
+						<_4451>
+							<!--General information-->AAI</_4451>
+						<!--FREE TEXT FUNCTION CODE-->
+						<_4453/>
+						<!--TEXT REFERENCE-->
+						<C107 type="Composite"/>
+						<!--TEXT LITERAL-->
+						<C108 type="Composite">
+							<!--Free text-->
+							<_4440>A120023782 NAELNR/ZI:ELA913/E BEDARFSORT:A1200204</_4440>
+						</C108>
+					</FTX>
+					<!--FREE TEXT-->
+					<FTX type="Segment">
+						<!--TEXT SUBJECT CODE QUALIFIER-->
+						<_4451>
+							<!--General information-->AAI</_4451>
+						<!--FREE TEXT FUNCTION CODE-->
+						<_4453/>
+						<!--TEXT REFERENCE-->
+						<C107 type="Composite"/>
+						<!--TEXT LITERAL-->
+						<C108 type="Composite">
+							<!--Free text-->
+							<_4440>A120023782 NAELNR/ZI:ELA913/E  BEDARFSORT:A1200204</_4440>
+						</C108>
+					</FTX>
+					<RFFLoop4 type="Loop">
+						<!--REFERENCE-->
+						<RFF type="Segment">
+							<!--REFERENCE-->
+							<C506 type="Composite">
+								<!--Reference code qualifier-->
+								<_1153>
+									<!--Buyers order number-->ON</_1153>
+								<!--Reference identifier-->
+								<_1154>1014774</_1154>
+								<!--Document line identifier-->
+								<_1156>00010</_1156>
+							</C506>
+						</RFF>
+					</RFFLoop4>
+					<RFFLoop4 type="Loop">
+						<!--REFERENCE-->
+						<RFF type="Segment">
+							<!--REFERENCE-->
+							<C506 type="Composite">
+								<!--Reference code qualifier-->
+								<_1153>
+									<!--Delivery schedule number-->AAN</_1153>
+								<!--Reference identifier-->
+								<_1154>412</_1154>
+							</C506>
+						</RFF>
+						<!--DATE/TIME/PERIOD-->
+						<DTM type="Segment">
+							<!--DATE/TIME/PERIOD-->
+							<C507 type="Composite">
+								<!--Date or time or period function code qualifier-->
+								<_2005>
+									<!--Reference date/time-->171</_2005>
+								<!--Date or time or period text-->
+								<_2380>20191112</_2380>
+								<!--Date or time or period format code-->
+								<_2379>
+									<!--CCYYMMDD-->102</_2379>
+							</C507>
+						</DTM>
+					</RFFLoop4>
+					<RFFLoop4 type="Loop">
+						<!--REFERENCE-->
+						<RFF type="Segment">
+							<!--REFERENCE-->
+							<C506 type="Composite">
+								<!--Reference code qualifier-->
+								<_1153>
+									<!--Previous delivery instruction number-->AIF</_1153>
+								<!--Reference identifier-->
+								<_1154>411</_1154>
+							</C506>
+						</RFF>
+						<!--DATE/TIME/PERIOD-->
+						<DTM type="Segment">
+							<!--DATE/TIME/PERIOD-->
+							<C507 type="Composite">
+								<!--Date or time or period function code qualifier-->
+								<_2005>
+									<!--Reference date/time-->171</_2005>
+								<!--Date or time or period text-->
+								<_2380>20191110</_2380>
+								<!--Date or time or period format code-->
+								<_2379>
+									<!--CCYYMMDD-->102</_2379>
+							</C507>
+						</DTM>
+					</RFFLoop4>
+					<CTALoop3 type="Loop">
+						<!--CONTACT INFORMATION-->
+						<CTA type="Segment">
+							<!--CONTACT FUNCTION CODE-->
+							<_3139>
+								<!--Schedule contact-->SC</_3139>
+							<!--DEPARTMENT OR EMPLOYEE DETAILS-->
+							<C056 type="Composite">
+								<!--Department or employee name code-->
+								<_3413>207</_3413>
+								<!--Department or employee name-->
+								<_3412>Mustermann, Max</_3412>
+							</C056>
+						</CTA>
+						<!--COMMUNICATION CONTACT-->
+						<COM type="Segment">
+							<!--COMMUNICATION CONTACT-->
+							<C076 type="Composite">
+								<!--Communication address identifier-->
+								<_3148>089-38212345</_3148>
+								<!--Communication address code qualifier-->
+								<_3155>
+									<!--Telephone-->TE</_3155>
+							</C076>
+						</COM>
+						<!--COMMUNICATION CONTACT-->
+						<COM type="Segment">
+							<!--COMMUNICATION CONTACT-->
+							<C076 type="Composite">
+								<!--Communication address identifier-->
+								<_3148>89382-70-29533</_3148>
+								<!--Communication address code qualifier-->
+								<_3155>
+									<!--Telefax-->FX</_3155>
+							</C076>
+						</COM>
+						<!--COMMUNICATION CONTACT-->
+						<COM type="Segment">
+							<!--COMMUNICATION CONTACT-->
+							<C076 type="Composite">
+								<!--Communication address identifier-->
+								<_3148>Max.Mustermann@bmw.de</_3148>
+								<!--Communication address code qualifier-->
+								<_3155>
+									<!--Electronic mail-->EM</_3155>
+							</C076>
+						</COM>
+					</CTALoop3>
+					<TDTLoop3 type="Loop">
+						<!--TRANSPORT INFORMATION-->
+						<TDT type="Segment">
+							<!--TRANSPORT STAGE CODE QUALIFIER-->
+							<_8051>
+								<!--Main-carriage transport-->20</_8051>
+						</TDT>
+					</TDTLoop3>
+					<QTYLoop1 type="Loop">
+						<!--QUANTITY-->
+						<QTY type="Segment">
+							<!--QUANTITY DETAILS-->
+							<C186 type="Composite">
+								<!--Quantity type code qualifier-->
+								<_6063>
+									<!--Cumulative quantity received-->70</_6063>
+								<!--Quantity-->
+								<_6060>50400</_6060>
+								<!--Measurement unit code-->
+								<_6411>PCE</_6411>
+							</C186>
+						</QTY>
+						<!--DATE/TIME/PERIOD-->
+						<DTM type="Segment">
+							<!--DATE/TIME/PERIOD-->
+							<C507 type="Composite">
+								<!--Date or time or period function code qualifier-->
+								<_2005>
+									<!--Cumulative quantity start date-->51</_2005>
+								<!--Date or time or period text-->
+								<_2380>20181231</_2380>
+								<!--Date or time or period format code-->
+								<_2379>
+									<!--CCYYMMDD-->102</_2379>
+							</C507>
+						</DTM>
+					</QTYLoop1>
+					<QTYLoop1 type="Loop">
+						<!--QUANTITY-->
+						<QTY type="Segment">
+							<!--QUANTITY DETAILS-->
+							<C186 type="Composite">
+								<!--Quantity type code qualifier-->
+								<_6063>
+									<!--Cumulative quantity ordered-->71</_6063>
+								<!--Quantity-->
+								<_6060>94762</_6060>
+								<!--Measurement unit code-->
+								<_6411>PCE</_6411>
+							</C186>
+						</QTY>
+						<!--DATE/TIME/PERIOD-->
+						<DTM type="Segment">
+							<!--DATE/TIME/PERIOD-->
+							<C507 type="Composite">
+								<!--Date or time or period function code qualifier-->
+								<_2005>
+									<!--Cumulative quantity start date-->51</_2005>
+								<!--Date or time or period text-->
+								<_2380>20181231</_2380>
+								<!--Date or time or period format code-->
+								<_2379>
+									<!--CCYYMMDD-->102</_2379>
+							</C507>
+						</DTM>
+					</QTYLoop1>
+					<QTYLoop1 type="Loop">
+						<!--QUANTITY-->
+						<QTY type="Segment">
+							<!--QUANTITY DETAILS-->
+							<C186 type="Composite">
+								<!--Quantity type code qualifier-->
+								<_6063>
+									<!--Received and accepted-->194</_6063>
+								<!--Quantity-->
+								<_6060>3600</_6060>
+								<!--Measurement unit code-->
+								<_6411>PCE</_6411>
+							</C186>
+						</QTY>
+						<!--DATE/TIME/PERIOD-->
+						<DTM type="Segment">
+							<!--DATE/TIME/PERIOD-->
+							<C507 type="Composite">
+								<!--Date or time or period function code qualifier-->
+								<_2005>
+									<!--Goods receipt date/time-->50</_2005>
+								<!--Date or time or period text-->
+								<_2380>201910220919</_2380>
+								<!--Date or time or period format code-->
+								<_2379>
+									<!--CCYYMMDDHHMM-->203</_2379>
+							</C507>
+						</DTM>
+						<RFFLoop5 type="Loop">
+							<!--REFERENCE-->
+							<RFF type="Segment">
+								<!--REFERENCE-->
+								<C506 type="Composite">
+									<!--Reference code qualifier-->
+									<_1153>
+										<!--Despatch note number-->AAU</_1153>
+									<!--Reference identifier-->
+									<_1154>62138199</_1154>
+								</C506>
+							</RFF>
+							<!--DATE/TIME/PERIOD-->
+							<DTM type="Segment">
+								<!--DATE/TIME/PERIOD-->
+								<C507 type="Composite">
+									<!--Date or time or period function code qualifier-->
+									<_2005>
+										<!--Reference date/time-->171</_2005>
+									<!--Date or time or period text-->
+									<_2380>20191021</_2380>
+									<!--Date or time or period format code-->
+									<_2379>
+										<!--CCYYMMDD-->102</_2379>
+								</C507>
+							</DTM>
+						</RFFLoop5>
+					</QTYLoop1>
+					<QTYLoop1 type="Loop">
+						<!--QUANTITY-->
+						<QTY type="Segment">
+							<!--QUANTITY DETAILS-->
+							<C186 type="Composite">
+								<!--Quantity type code qualifier-->
+								<_6063>
+									<!--Received and accepted-->194</_6063>
+								<!--Quantity-->
+								<_6060>3600</_6060>
+								<!--Measurement unit code-->
+								<_6411>PCE</_6411>
+							</C186>
+						</QTY>
+						<!--DATE/TIME/PERIOD-->
+						<DTM type="Segment">
+							<!--DATE/TIME/PERIOD-->
+							<C507 type="Composite">
+								<!--Date or time or period function code qualifier-->
+								<_2005>
+									<!--Goods receipt date/time-->50</_2005>
+								<!--Date or time or period text-->
+								<_2380>201909241641</_2380>
+								<!--Date or time or period format code-->
+								<_2379>
+									<!--CCYYMMDDHHMM-->203</_2379>
+							</C507>
+						</DTM>
+						<RFFLoop5 type="Loop">
+							<!--REFERENCE-->
+							<RFF type="Segment">
+								<!--REFERENCE-->
+								<C506 type="Composite">
+									<!--Reference code qualifier-->
+									<_1153>
+										<!--Despatch note number-->AAU</_1153>
+									<!--Reference identifier-->
+									<_1154>62137690</_1154>
+								</C506>
+							</RFF>
+							<!--DATE/TIME/PERIOD-->
+							<DTM type="Segment">
+								<!--DATE/TIME/PERIOD-->
+								<C507 type="Composite">
+									<!--Date or time or period function code qualifier-->
+									<_2005>
+										<!--Reference date/time-->171</_2005>
+									<!--Date or time or period text-->
+									<_2380>20190919</_2380>
+									<!--Date or time or period format code-->
+									<_2379>
+										<!--CCYYMMDD-->102</_2379>
+								</C507>
+							</DTM>
+						</RFFLoop5>
+					</QTYLoop1>
+					<QTYLoop1 type="Loop">
+						<!--QUANTITY-->
+						<QTY type="Segment">
+							<!--QUANTITY DETAILS-->
+							<C186 type="Composite">
+								<!--Quantity type code qualifier-->
+								<_6063>
+									<!--Received and accepted-->194</_6063>
+								<!--Quantity-->
+								<_6060>3600</_6060>
+								<!--Measurement unit code-->
+								<_6411>PCE</_6411>
+							</C186>
+						</QTY>
+						<!--DATE/TIME/PERIOD-->
+						<DTM type="Segment">
+							<!--DATE/TIME/PERIOD-->
+							<C507 type="Composite">
+								<!--Date or time or period function code qualifier-->
+								<_2005>
+									<!--Goods receipt date/time-->50</_2005>
+								<!--Date or time or period text-->
+								<_2380>201908291712</_2380>
+								<!--Date or time or period format code-->
+								<_2379>
+									<!--CCYYMMDDHHMM-->203</_2379>
+							</C507>
+						</DTM>
+						<RFFLoop5 type="Loop">
+							<!--REFERENCE-->
+							<RFF type="Segment">
+								<!--REFERENCE-->
+								<C506 type="Composite">
+									<!--Reference code qualifier-->
+									<_1153>
+										<!--Despatch note number-->AAU</_1153>
+									<!--Reference identifier-->
+									<_1154>62137099</_1154>
+								</C506>
+							</RFF>
+							<!--DATE/TIME/PERIOD-->
+							<DTM type="Segment">
+								<!--DATE/TIME/PERIOD-->
+								<C507 type="Composite">
+									<!--Date or time or period function code qualifier-->
+									<_2005>
+										<!--Reference date/time-->171</_2005>
+									<!--Date or time or period text-->
+									<_2380>20190828</_2380>
+									<!--Date or time or period format code-->
+									<_2379>
+										<!--CCYYMMDD-->102</_2379>
+								</C507>
+							</DTM>
+						</RFFLoop5>
+					</QTYLoop1>
+					<SCCLoop1 type="Loop">
+						<!--SCHEDULING CONDITIONS-->
+						<SCC type="Segment">
+							<!--DELIVERY PLAN COMMITMENT LEVEL CODE-->
+							<_4017>
+								<!--Reference to commercial agreement between partners-->24</_4017>
+						</SCC>
+						<QTYLoop2 type="Loop">
+							<!--QUANTITY-->
+							<QTY type="Segment">
+								<!--QUANTITY DETAILS-->
+								<C186 type="Composite">
+									<!--Quantity type code qualifier-->
+									<_6063>
+										<!--Quantity to be delivered-->113</_6063>
+									<!--Quantity-->
+									<_6060>3600</_6060>
+									<!--Measurement unit code-->
+									<_6411>PCE</_6411>
+								</C186>
+							</QTY>
+							<!--DATE/TIME/PERIOD-->
+							<DTM type="Segment">
+								<!--DATE/TIME/PERIOD-->
+								<C507 type="Composite">
+									<!--Date or time or period function code qualifier-->
+									<_2005>
+										<!--Delivery date/time, requested-->2</_2005>
+									<!--Date or time or period text-->
+									<_2380>20191119</_2380>
+									<!--Date or time or period format code-->
+									<_2379>
+										<!--CCYYMMDD-->102</_2379>
+								</C507>
+							</DTM>
+						</QTYLoop2>
+						<QTYLoop2 type="Loop">
+							<!--QUANTITY-->
+							<QTY type="Segment">
+								<!--QUANTITY DETAILS-->
+								<C186 type="Composite">
+									<!--Quantity type code qualifier-->
+									<_6063>
+										<!--Quantity to be delivered-->113</_6063>
+									<!--Quantity-->
+									<_6060>0</_6060>
+									<!--Measurement unit code-->
+									<_6411>PCE</_6411>
+								</C186>
+							</QTY>
+							<!--DATE/TIME/PERIOD-->
+							<DTM type="Segment">
+								<!--DATE/TIME/PERIOD-->
+								<C507 type="Composite">
+									<!--Date or time or period function code qualifier-->
+									<_2005>
+										<!--Delivery date/time, requested-->2</_2005>
+									<!--Date or time or period text-->
+									<_2380>20191121</_2380>
+									<!--Date or time or period format code-->
+									<_2379>
+										<!--CCYYMMDD-->102</_2379>
+								</C507>
+							</DTM>
+						</QTYLoop2>
+						<QTYLoop2 type="Loop">
+							<!--QUANTITY-->
+							<QTY type="Segment">
+								<!--QUANTITY DETAILS-->
+								<C186 type="Composite">
+									<!--Quantity type code qualifier-->
+									<_6063>
+										<!--Quantity to be delivered-->113</_6063>
+									<!--Quantity-->
+									<_6060>3600</_6060>
+									<!--Measurement unit code-->
+									<_6411>PCE</_6411>
+								</C186>
+							</QTY>
+							<!--DATE/TIME/PERIOD-->
+							<DTM type="Segment">
+								<!--DATE/TIME/PERIOD-->
+								<C507 type="Composite">
+									<!--Date or time or period function code qualifier-->
+									<_2005>
+										<!--Delivery date/time, requested-->2</_2005>
+									<!--Date or time or period text-->
+									<_2380>20191217</_2380>
+									<!--Date or time or period format code-->
+									<_2379>
+										<!--CCYYMMDD-->102</_2379>
+								</C507>
+							</DTM>
+						</QTYLoop2>
+					</SCCLoop1>
+					<SCCLoop1 type="Loop">
+						<!--SCHEDULING CONDITIONS-->
+						<SCC type="Segment">
+							<!--DELIVERY PLAN COMMITMENT LEVEL CODE-->
+							<_4017>
+								<!--Commitment for manufacturing and material-->2</_4017>
+						</SCC>
+						<QTYLoop2 type="Loop">
+							<!--QUANTITY-->
+							<QTY type="Segment">
+								<!--QUANTITY DETAILS-->
+								<C186 type="Composite">
+									<!--Quantity type code qualifier-->
+									<_6063>
+										<!--Quantity to be delivered-->113</_6063>
+									<!--Quantity-->
+									<_6060>3600</_6060>
+									<!--Measurement unit code-->
+									<_6411>PCE</_6411>
+								</C186>
+							</QTY>
+							<!--DATE/TIME/PERIOD-->
+							<DTM type="Segment">
+								<!--DATE/TIME/PERIOD-->
+								<C507 type="Composite">
+									<!--Date or time or period function code qualifier-->
+									<_2005>
+										<!--Start date/time-->194</_2005>
+									<!--Date or time or period text-->
+									<_2380>20191112</_2380>
+									<!--Date or time or period format code-->
+									<_2379>
+										<!--CCYYMMDD-->102</_2379>
+								</C507>
+							</DTM>
+							<!--DATE/TIME/PERIOD-->
+							<DTM type="Segment">
+								<!--DATE/TIME/PERIOD-->
+								<C507 type="Composite">
+									<!--Date or time or period function code qualifier-->
+									<_2005>
+										<!--End date/time-->206</_2005>
+									<!--Date or time or period text-->
+									<_2380>20191212</_2380>
+									<!--Date or time or period format code-->
+									<_2379>
+										<!--CCYYMMDD-->102</_2379>
+								</C507>
+							</DTM>
+						</QTYLoop2>
+					</SCCLoop1>
+					<SCCLoop1 type="Loop">
+						<!--SCHEDULING CONDITIONS-->
+						<SCC type="Segment">
+							<!--DELIVERY PLAN COMMITMENT LEVEL CODE-->
+							<_4017>
+								<!--Commitment for material-->3</_4017>
+						</SCC>
+						<QTYLoop2 type="Loop">
+							<!--QUANTITY-->
+							<QTY type="Segment">
+								<!--QUANTITY DETAILS-->
+								<C186 type="Composite">
+									<!--Quantity type code qualifier-->
+									<_6063>
+										<!--Quantity to be delivered-->113</_6063>
+									<!--Quantity-->
+									<_6060>3600</_6060>
+									<!--Measurement unit code-->
+									<_6411>PCE</_6411>
+								</C186>
+							</QTY>
+							<!--DATE/TIME/PERIOD-->
+							<DTM type="Segment">
+								<!--DATE/TIME/PERIOD-->
+								<C507 type="Composite">
+									<!--Date or time or period function code qualifier-->
+									<_2005>
+										<!--Start date/time-->194</_2005>
+									<!--Date or time or period text-->
+									<_2380>20191112</_2380>
+									<!--Date or time or period format code-->
+									<_2379>
+										<!--CCYYMMDD-->102</_2379>
+								</C507>
+							</DTM>
+							<!--DATE/TIME/PERIOD-->
+							<DTM type="Segment">
+								<!--DATE/TIME/PERIOD-->
+								<C507 type="Composite">
+									<!--Date or time or period function code qualifier-->
+									<_2005>
+										<!--End date/time-->206</_2005>
+									<!--Date or time or period text-->
+									<_2380>20191212</_2380>
+									<!--Date or time or period format code-->
+									<_2379>
+										<!--CCYYMMDD-->102</_2379>
+								</C507>
+							</DTM>
+						</QTYLoop2>
+					</SCCLoop1>
+					<SCCLoop1 type="Loop">
+						<!--SCHEDULING CONDITIONS-->
+						<SCC type="Segment">
+							<!--DELIVERY PLAN COMMITMENT LEVEL CODE-->
+							<_4017>
+								<!--Planning/forecast-->4</_4017>
+						</SCC>
+						<QTYLoop2 type="Loop">
+							<!--QUANTITY-->
+							<QTY type="Segment">
+								<!--QUANTITY DETAILS-->
+								<C186 type="Composite">
+									<!--Quantity type code qualifier-->
+									<_6063>
+										<!--Quantity to be delivered-->113</_6063>
+									<!--Quantity-->
+									<_6060>3600</_6060>
+									<!--Measurement unit code-->
+									<_6411>PCE</_6411>
+								</C186>
+							</QTY>
+							<!--DATE/TIME/PERIOD-->
+							<DTM type="Segment">
+								<!--DATE/TIME/PERIOD-->
+								<C507 type="Composite">
+									<!--Date or time or period function code qualifier-->
+									<_2005>
+										<!--Delivery date/time, earliest-->64</_2005>
+									<!--Date or time or period text-->
+									<_2380>20200127</_2380>
+									<!--Date or time or period format code-->
+									<_2379>
+										<!--CCYYMMDD-->102</_2379>
+								</C507>
+							</DTM>
+							<!--DATE/TIME/PERIOD-->
+							<DTM type="Segment">
+								<!--DATE/TIME/PERIOD-->
+								<C507 type="Composite">
+									<!--Date or time or period function code qualifier-->
+									<_2005>
+										<!--Delivery date/time, latest-->63</_2005>
+									<!--Date or time or period text-->
+									<_2380>20200202</_2380>
+									<!--Date or time or period format code-->
+									<_2379>
+										<!--CCYYMMDD-->102</_2379>
+								</C507>
+							</DTM>
+						</QTYLoop2>
+						<QTYLoop2 type="Loop">
+							<!--QUANTITY-->
+							<QTY type="Segment">
+								<!--QUANTITY DETAILS-->
+								<C186 type="Composite">
+									<!--Quantity type code qualifier-->
+									<_6063>
+										<!--Quantity to be delivered-->113</_6063>
+									<!--Quantity-->
+									<_6060>3600</_6060>
+									<!--Measurement unit code-->
+									<_6411>PCE</_6411>
+								</C186>
+							</QTY>
+							<!--DATE/TIME/PERIOD-->
+							<DTM type="Segment">
+								<!--DATE/TIME/PERIOD-->
+								<C507 type="Composite">
+									<!--Date or time or period function code qualifier-->
+									<_2005>
+										<!--Delivery date/time, earliest-->64</_2005>
+									<!--Date or time or period text-->
+									<_2380>20200302</_2380>
+									<!--Date or time or period format code-->
+									<_2379>
+										<!--CCYYMMDD-->102</_2379>
+								</C507>
+							</DTM>
+							<!--DATE/TIME/PERIOD-->
+							<DTM type="Segment">
+								<!--DATE/TIME/PERIOD-->
+								<C507 type="Composite">
+									<!--Date or time or period function code qualifier-->
+									<_2005>
+										<!--Delivery date/time, latest-->63</_2005>
+									<!--Date or time or period text-->
+									<_2380>20200308</_2380>
+									<!--Date or time or period format code-->
+									<_2379>
+										<!--CCYYMMDD-->102</_2379>
+								</C507>
+							</DTM>
+						</QTYLoop2>
+						<QTYLoop2 type="Loop">
+							<!--QUANTITY-->
+							<QTY type="Segment">
+								<!--QUANTITY DETAILS-->
+								<C186 type="Composite">
+									<!--Quantity type code qualifier-->
+									<_6063>
+										<!--Quantity to be delivered-->113</_6063>
+									<!--Quantity-->
+									<_6060>3600</_6060>
+									<!--Measurement unit code-->
+									<_6411>PCE</_6411>
+								</C186>
+							</QTY>
+							<!--DATE/TIME/PERIOD-->
+							<DTM type="Segment">
+								<!--DATE/TIME/PERIOD-->
+								<C507 type="Composite">
+									<!--Date or time or period function code qualifier-->
+									<_2005>
+										<!--Delivery date/time, earliest-->64</_2005>
+									<!--Date or time or period text-->
+									<_2380>20200323</_2380>
+									<!--Date or time or period format code-->
+									<_2379>
+										<!--CCYYMMDD-->102</_2379>
+								</C507>
+							</DTM>
+							<!--DATE/TIME/PERIOD-->
+							<DTM type="Segment">
+								<!--DATE/TIME/PERIOD-->
+								<C507 type="Composite">
+									<!--Date or time or period function code qualifier-->
+									<_2005>
+										<!--Delivery date/time, latest-->63</_2005>
+									<!--Date or time or period text-->
+									<_2380>20200329</_2380>
+									<!--Date or time or period format code-->
+									<_2379>
+										<!--CCYYMMDD-->102</_2379>
+								</C507>
+							</DTM>
+						</QTYLoop2>
+						<QTYLoop2 type="Loop">
+							<!--QUANTITY-->
+							<QTY type="Segment">
+								<!--QUANTITY DETAILS-->
+								<C186 type="Composite">
+									<!--Quantity type code qualifier-->
+									<_6063>
+										<!--Quantity to be delivered-->113</_6063>
+									<!--Quantity-->
+									<_6060>3600</_6060>
+									<!--Measurement unit code-->
+									<_6411>PCE</_6411>
+								</C186>
+							</QTY>
+							<!--DATE/TIME/PERIOD-->
+							<DTM type="Segment">
+								<!--DATE/TIME/PERIOD-->
+								<C507 type="Composite">
+									<!--Date or time or period function code qualifier-->
+									<_2005>
+										<!--Delivery date/time, earliest-->64</_2005>
+									<!--Date or time or period text-->
+									<_2380>20200504</_2380>
+									<!--Date or time or period format code-->
+									<_2379>
+										<!--CCYYMMDD-->102</_2379>
+								</C507>
+							</DTM>
+							<!--DATE/TIME/PERIOD-->
+							<DTM type="Segment">
+								<!--DATE/TIME/PERIOD-->
+								<C507 type="Composite">
+									<!--Date or time or period function code qualifier-->
+									<_2005>
+										<!--Delivery date/time, latest-->63</_2005>
+									<!--Date or time or period text-->
+									<_2380>20200510</_2380>
+									<!--Date or time or period format code-->
+									<_2379>
+										<!--CCYYMMDD-->102</_2379>
+								</C507>
+							</DTM>
+						</QTYLoop2>
+						<QTYLoop2 type="Loop">
+							<!--QUANTITY-->
+							<QTY type="Segment">
+								<!--QUANTITY DETAILS-->
+								<C186 type="Composite">
+									<!--Quantity type code qualifier-->
+									<_6063>
+										<!--Quantity to be delivered-->113</_6063>
+									<!--Quantity-->
+									<_6060>3600</_6060>
+									<!--Measurement unit code-->
+									<_6411>PCE</_6411>
+								</C186>
+							</QTY>
+							<!--DATE/TIME/PERIOD-->
+							<DTM type="Segment">
+								<!--DATE/TIME/PERIOD-->
+								<C507 type="Composite">
+									<!--Date or time or period function code qualifier-->
+									<_2005>
+										<!--Delivery date/time, earliest-->64</_2005>
+									<!--Date or time or period text-->
+									<_2380>20200608</_2380>
+									<!--Date or time or period format code-->
+									<_2379>
+										<!--CCYYMMDD-->102</_2379>
+								</C507>
+							</DTM>
+							<!--DATE/TIME/PERIOD-->
+							<DTM type="Segment">
+								<!--DATE/TIME/PERIOD-->
+								<C507 type="Composite">
+									<!--Date or time or period function code qualifier-->
+									<_2005>
+										<!--Delivery date/time, latest-->63</_2005>
+									<!--Date or time or period text-->
+									<_2380>20200614</_2380>
+									<!--Date or time or period format code-->
+									<_2379>
+										<!--CCYYMMDD-->102</_2379>
+								</C507>
+							</DTM>
+						</QTYLoop2>
+						<QTYLoop2 type="Loop">
+							<!--QUANTITY-->
+							<QTY type="Segment">
+								<!--QUANTITY DETAILS-->
+								<C186 type="Composite">
+									<!--Quantity type code qualifier-->
+									<_6063>
+										<!--Quantity to be delivered-->113</_6063>
+									<!--Quantity-->
+									<_6060>3600</_6060>
+									<!--Measurement unit code-->
+									<_6411>PCE</_6411>
+								</C186>
+							</QTY>
+							<!--DATE/TIME/PERIOD-->
+							<DTM type="Segment">
+								<!--DATE/TIME/PERIOD-->
+								<C507 type="Composite">
+									<!--Date or time or period function code qualifier-->
+									<_2005>
+										<!--Delivery date/time, earliest-->64</_2005>
+									<!--Date or time or period text-->
+									<_2380>20200629</_2380>
+									<!--Date or time or period format code-->
+									<_2379>
+										<!--CCYYMMDD-->102</_2379>
+								</C507>
+							</DTM>
+							<!--DATE/TIME/PERIOD-->
+							<DTM type="Segment">
+								<!--DATE/TIME/PERIOD-->
+								<C507 type="Composite">
+									<!--Date or time or period function code qualifier-->
+									<_2005>
+										<!--Delivery date/time, latest-->63</_2005>
+									<!--Date or time or period text-->
+									<_2380>20200705</_2380>
+									<!--Date or time or period format code-->
+									<_2379>
+										<!--CCYYMMDD-->102</_2379>
+								</C507>
+							</DTM>
+						</QTYLoop2>
+						<QTYLoop2 type="Loop">
+							<!--QUANTITY-->
+							<QTY type="Segment">
+								<!--QUANTITY DETAILS-->
+								<C186 type="Composite">
+									<!--Quantity type code qualifier-->
+									<_6063>
+										<!--Quantity to be delivered-->113</_6063>
+									<!--Quantity-->
+									<_6060>3600</_6060>
+									<!--Measurement unit code-->
+									<_6411>PCE</_6411>
+								</C186>
+							</QTY>
+							<!--DATE/TIME/PERIOD-->
+							<DTM type="Segment">
+								<!--DATE/TIME/PERIOD-->
+								<C507 type="Composite">
+									<!--Date or time or period function code qualifier-->
+									<_2005>
+										<!--Delivery date/time, earliest-->64</_2005>
+									<!--Date or time or period text-->
+									<_2380>20200706</_2380>
+									<!--Date or time or period format code-->
+									<_2379>
+										<!--CCYYMMDD-->102</_2379>
+								</C507>
+							</DTM>
+							<!--DATE/TIME/PERIOD-->
+							<DTM type="Segment">
+								<!--DATE/TIME/PERIOD-->
+								<C507 type="Composite">
+									<!--Date or time or period function code qualifier-->
+									<_2005>
+										<!--Delivery date/time, latest-->63</_2005>
+									<!--Date or time or period text-->
+									<_2380>20200731</_2380>
+									<!--Date or time or period format code-->
+									<_2379>
+										<!--CCYYMMDD-->102</_2379>
+								</C507>
+							</DTM>
+						</QTYLoop2>
+						<QTYLoop2 type="Loop">
+							<!--QUANTITY-->
+							<QTY type="Segment">
+								<!--QUANTITY DETAILS-->
+								<C186 type="Composite">
+									<!--Quantity type code qualifier-->
+									<_6063>
+										<!--Quantity to be delivered-->113</_6063>
+									<!--Quantity-->
+									<_6060>0</_6060>
+									<!--Measurement unit code-->
+									<_6411>PCE</_6411>
+								</C186>
+							</QTY>
+							<!--DATE/TIME/PERIOD-->
+							<DTM type="Segment">
+								<!--DATE/TIME/PERIOD-->
+								<C507 type="Composite">
+									<!--Date or time or period function code qualifier-->
+									<_2005>
+										<!--Delivery date/time, earliest-->64</_2005>
+									<!--Date or time or period text-->
+									<_2380>20200801</_2380>
+									<!--Date or time or period format code-->
+									<_2379>
+										<!--CCYYMMDD-->102</_2379>
+								</C507>
+							</DTM>
+							<!--DATE/TIME/PERIOD-->
+							<DTM type="Segment">
+								<!--DATE/TIME/PERIOD-->
+								<C507 type="Composite">
+									<!--Date or time or period function code qualifier-->
+									<_2005>
+										<!--Delivery date/time, latest-->63</_2005>
+									<!--Date or time or period text-->
+									<_2380>20200831</_2380>
+									<!--Date or time or period format code-->
+									<_2379>
+										<!--CCYYMMDD-->102</_2379>
+								</C507>
+							</DTM>
+						</QTYLoop2>
+						<QTYLoop2 type="Loop">
+							<!--QUANTITY-->
+							<QTY type="Segment">
+								<!--QUANTITY DETAILS-->
+								<C186 type="Composite">
+									<!--Quantity type code qualifier-->
+									<_6063>
+										<!--Quantity to be delivered-->113</_6063>
+									<!--Quantity-->
+									<_6060>7200</_6060>
+									<!--Measurement unit code-->
+									<_6411>PCE</_6411>
+								</C186>
+							</QTY>
+							<!--DATE/TIME/PERIOD-->
+							<DTM type="Segment">
+								<!--DATE/TIME/PERIOD-->
+								<C507 type="Composite">
+									<!--Date or time or period function code qualifier-->
+									<_2005>
+										<!--Delivery date/time, earliest-->64</_2005>
+									<!--Date or time or period text-->
+									<_2380>20200901</_2380>
+									<!--Date or time or period format code-->
+									<_2379>
+										<!--CCYYMMDD-->102</_2379>
+								</C507>
+							</DTM>
+							<!--DATE/TIME/PERIOD-->
+							<DTM type="Segment">
+								<!--DATE/TIME/PERIOD-->
+								<C507 type="Composite">
+									<!--Date or time or period function code qualifier-->
+									<_2005>
+										<!--Delivery date/time, latest-->63</_2005>
+									<!--Date or time or period text-->
+									<_2380>20200930</_2380>
+									<!--Date or time or period format code-->
+									<_2379>
+										<!--CCYYMMDD-->102</_2379>
+								</C507>
+							</DTM>
+						</QTYLoop2>
+						<QTYLoop2 type="Loop">
+							<!--QUANTITY-->
+							<QTY type="Segment">
+								<!--QUANTITY DETAILS-->
+								<C186 type="Composite">
+									<!--Quantity type code qualifier-->
+									<_6063>
+										<!--Quantity to be delivered-->113</_6063>
+									<!--Quantity-->
+									<_6060>0</_6060>
+									<!--Measurement unit code-->
+									<_6411>PCE</_6411>
+								</C186>
+							</QTY>
+							<!--DATE/TIME/PERIOD-->
+							<DTM type="Segment">
+								<!--DATE/TIME/PERIOD-->
+								<C507 type="Composite">
+									<!--Date or time or period function code qualifier-->
+									<_2005>
+										<!--Delivery date/time, earliest-->64</_2005>
+									<!--Date or time or period text-->
+									<_2380>20201001</_2380>
+									<!--Date or time or period format code-->
+									<_2379>
+										<!--CCYYMMDD-->102</_2379>
+								</C507>
+							</DTM>
+							<!--DATE/TIME/PERIOD-->
+							<DTM type="Segment">
+								<!--DATE/TIME/PERIOD-->
+								<C507 type="Composite">
+									<!--Date or time or period function code qualifier-->
+									<_2005>
+										<!--Delivery date/time, latest-->63</_2005>
+									<!--Date or time or period text-->
+									<_2380>20201031</_2380>
+									<!--Date or time or period format code-->
+									<_2379>
+										<!--CCYYMMDD-->102</_2379>
+								</C507>
+							</DTM>
+						</QTYLoop2>
+						<QTYLoop2 type="Loop">
+							<!--QUANTITY-->
+							<QTY type="Segment">
+								<!--QUANTITY DETAILS-->
+								<C186 type="Composite">
+									<!--Quantity type code qualifier-->
+									<_6063>
+										<!--Quantity to be delivered-->113</_6063>
+									<!--Quantity-->
+									<_6060>3600</_6060>
+									<!--Measurement unit code-->
+									<_6411>PCE</_6411>
+								</C186>
+							</QTY>
+							<!--DATE/TIME/PERIOD-->
+							<DTM type="Segment">
+								<!--DATE/TIME/PERIOD-->
+								<C507 type="Composite">
+									<!--Date or time or period function code qualifier-->
+									<_2005>
+										<!--Delivery date/time, earliest-->64</_2005>
+									<!--Date or time or period text-->
+									<_2380>20201101</_2380>
+									<!--Date or time or period format code-->
+									<_2379>
+										<!--CCYYMMDD-->102</_2379>
+								</C507>
+							</DTM>
+							<!--DATE/TIME/PERIOD-->
+							<DTM type="Segment">
+								<!--DATE/TIME/PERIOD-->
+								<C507 type="Composite">
+									<!--Date or time or period function code qualifier-->
+									<_2005>
+										<!--Delivery date/time, latest-->63</_2005>
+									<!--Date or time or period text-->
+									<_2380>20201130</_2380>
+									<!--Date or time or period format code-->
+									<_2379>
+										<!--CCYYMMDD-->102</_2379>
+								</C507>
+							</DTM>
+						</QTYLoop2>
+						<QTYLoop2 type="Loop">
+							<!--QUANTITY-->
+							<QTY type="Segment">
+								<!--QUANTITY DETAILS-->
+								<C186 type="Composite">
+									<!--Quantity type code qualifier-->
+									<_6063>
+										<!--Quantity to be delivered-->113</_6063>
+									<!--Quantity-->
+									<_6060>1162</_6060>
+									<!--Measurement unit code-->
+									<_6411>PCE</_6411>
+								</C186>
+							</QTY>
+							<!--DATE/TIME/PERIOD-->
+							<DTM type="Segment">
+								<!--DATE/TIME/PERIOD-->
+								<C507 type="Composite">
+									<!--Date or time or period function code qualifier-->
+									<_2005>
+										<!--Delivery date/time, earliest-->64</_2005>
+									<!--Date or time or period text-->
+									<_2380>20201201</_2380>
+									<!--Date or time or period format code-->
+									<_2379>
+										<!--CCYYMMDD-->102</_2379>
+								</C507>
+							</DTM>
+							<!--DATE/TIME/PERIOD-->
+							<DTM type="Segment">
+								<!--DATE/TIME/PERIOD-->
+								<C507 type="Composite">
+									<!--Date or time or period function code qualifier-->
+									<_2005>
+										<!--Delivery date/time, latest-->63</_2005>
+									<!--Date or time or period text-->
+									<_2380>20201231</_2380>
+									<!--Date or time or period format code-->
+									<_2379>
+										<!--CCYYMMDD-->102</_2379>
+								</C507>
+							</DTM>
+						</QTYLoop2>
+					</SCCLoop1>
+				</LINLoop1>
+			</GEILoop1>
+		</TX-D04A-DELFOR>
+	</TransactionSet>
+</Interchange>
